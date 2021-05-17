@@ -1,10 +1,11 @@
-# PrincetonNLPYiddish
+# Project Language
 
-Simple overview of use/purpose.
+This repository is the central point for documentation and data for your project. You will find several folders where you can store the data and code used as you create data and train models for a new language. 
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Description of your language and your research goals.
+
 
 ## Getting Started
 
