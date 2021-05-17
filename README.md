@@ -14,6 +14,7 @@ This repository is the central point for documentation and data for your project
 
 `5_inception_export`: This folder contains the CoNLL-U data that is exported from INCEpTION once annotation work is completed. If versioning of exports is required, you can place each version is its own subfolder. During training, this folder provides the main source of training data and should be split between training and validation sets.
 
+`6_trained_models`: This folder contains packaged models and model cards for your new language models.
 ## Description
 
 Description of your language and your research goals.
