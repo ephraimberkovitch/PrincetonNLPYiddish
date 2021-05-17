@@ -10,7 +10,7 @@ This repository is the central point for documentation and data for your project
 
 `3_cadet_export`: This folder should contain the conllu_export.zip file that is created by either Cadet or the Cadet notebook. The files inside constitute the starting point for annotation work in INCEpTION and are superseded by the INCEpTION export files.
 
-`4_new_language_object`: This folder contains the serialized nlp object from either Cadet or the Cadet notebook. This folder is fetched during training to load the new language object.
+`4_new_language_object`: This folder contains the serialized nlp object from either Cadet or the Cadet notebook. This folder is fetched during training to load the new language object. It also contains the project.yml file. 
 
 `5_inception_export`: This folder contains the CoNLL-U data that is exported from INCEpTION once annotation work is completed. If versioning of exports is required, you can place each version is its own subfolder. During training, this folder provides the main source of training data and should be split between training and validation sets.
 
