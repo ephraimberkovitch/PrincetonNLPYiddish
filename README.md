@@ -1,4 +1,4 @@
-# Project Language
+# Project Language ~ 
 
 This repository is the central point for documentation and data for your project. You will find several folders where you can store the data and code used as you create data and train models for a new language. 
 
