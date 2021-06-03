@@ -30,12 +30,8 @@ Description of your language and your research goals.
 ## Dataset Curators
 
 
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
 ## Citation Information
+
 ## Authors
 
 Contributors names and contact info
