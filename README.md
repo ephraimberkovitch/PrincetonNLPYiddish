@@ -23,7 +23,7 @@ Description of your language and your research goals.
 - Provenance
 - Copyright
 
-## Personal and Sensitive Information
+## Personal and Sensitive Information, Potential for Human Harm 
 
 ## Licensing Information
 
