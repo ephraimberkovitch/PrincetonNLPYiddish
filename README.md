@@ -20,7 +20,7 @@ Description of your language and your research goals.
 ## Curation Rationale
 
 ## Source Data
-- Provenance
+- Provenance, how obtained
 - Copyright
 
 ## Personal and Sensitive Information, Potential for Human Harm 
