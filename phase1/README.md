@@ -37,5 +37,6 @@ Description of your language and your research goals.
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Ephraim Berkovitch
+
+Sinai Rusinek. [@SinaiRusinek](https://twitter.com/SinaiRusinek)
