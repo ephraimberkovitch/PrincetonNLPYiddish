@@ -21,4 +21,5 @@
 20.https://new-languages-for-nlp.github.io/course-materials/w1/cadet-notebook.html
 21.pymorphy2
 22.https://github.com/OnlpLab/NEMO-Corpus/tree/main/guidelines
-23.
+23.https://programminghistorian.org/en/lessons/jupyter-notebooks
+24.
