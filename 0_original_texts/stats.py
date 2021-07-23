@@ -6,6 +6,10 @@ SITES_TO_SCRAPE = [
 ]
 
 def analyze_yiddish_tanakh():
+    # how many tokens in total?
+    # how many different tokens?
+    # frequency table
+    # compare with Finkel's dictionary
     pass
 
 if __name__ == '__main__':
