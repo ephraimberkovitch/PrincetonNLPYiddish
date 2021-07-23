@@ -22,4 +22,7 @@
 21.pymorphy2
 22.https://github.com/OnlpLab/NEMO-Corpus/tree/main/guidelines
 23.https://programminghistorian.org/en/lessons/jupyter-notebooks
-24.
+24.https://github.com/inception-project/inception-external-recommender
+25.https://gitter.im/inception-project/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+26.https://yi.wikipedia.org/wiki/%D7%9C%D7%99%D7%A1%D7%98%D7%A2_%D7%A4%D7%95%D7%9F_%D7%9C%D7%A9%D7%95%D7%9F-%D7%A7%D7%95%D7%93%D7%A9_%D7%95%D7%95%D7%A2%D7%A8%D7%98%D7%A2%D7%A8_%D7%90%D7%99%D7%9F_%D7%99%D7%99%D7%93%D7%99%D7%A9
+27.
