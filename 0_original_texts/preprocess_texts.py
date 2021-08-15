@@ -43,14 +43,37 @@ def finkel_stats():
     print(len(tanakh_dict))
 
     finkel_missing = 0
+    total_tanakh = 0
 
     for tanakh_token in tanakh_dict:
         if tanakh_token not in finkel_dict:
             finkel_missing += 1
+        total_tanakh += tanakh_dict[tanakh_token]
 
-    print(finkel_missing)
+    print(finkel_missing)  # finkel:125059 => tanakh-different:24775 => tanakh-missing-in-finkel:17475
+    print(total_tanakh)  # tanakh-total:595287
+
+
+def add_yiddish_lemmas_to_finkel():
+    finkel = pd.read_csv("../1_lookups_data/wordlist.csv")
+    # basic_form = finkel[finkel.Gloss == 'NOUN.MASC']
+    basic_form = finkel[(finkel.Base == finkel.Romanized) | (finkel.Gloss == 'NOUN.MASC')]
+    print(len(basic_form))
+    basic_form_dict = {row[0]: row[2] for _, row in basic_form.iterrows()}
+    finkel['lemma'] = finkel.apply(lambda row: lemmatize(row, basic_form_dict), axis=1)
+    print(len(finkel[finkel.lemma != '']))
+    finkel.to_csv("../1_lookups_data/wordlist_with_lemmas.csv", index=False)
+    # 5657 lemmas, 23057 did get lemmas - finkel.Gloss == 'NOUN.MASC'
+    # 16660 lemmas, 68879 did get lemmas - finkel.Base == finkel.Romanized
+    # 16682 lemmas, 68927 did get lemmas - both
+
+
+def lemmatize (row, basic_form_dict):
+   return basic_form_dict.get(row[0], "")
+
 
 if __name__ == '__main__':
     # clean_tanach()
     # generate_tanach_stats()  # 24,776
-    finkel_stats()
+    # finkel_stats()
+    add_yiddish_lemmas_to_finkel()
