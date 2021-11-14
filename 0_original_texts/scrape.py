@@ -10,10 +10,15 @@ def get_page_source(url):
     return page_content
 
 
+def is_yiddish_title(title):
+    heb_ab = [chr(1488+code) for code in range(27)]
+    return any(char in title for char in heb_ab)
+
+
 def scrape_bs():
 
-    regex1 = r"<h2 class=\"entry-title\"><a href=\"(.*?)\" rel=\"bookmark\">(.*?)<\/a><\/h2>"
-    regex2 = r"<h2 class=\"entry-title idish\"><a href=\"(.*?)\" rel=\"bookmark\">(.*?)<\/a><\/h2>"
+    regex1 = r"<h2 class=\"entry-title(?: idish)*\"><a href=\"(.*?)\" rel=\"bookmark\">(.*?)<\/a><\/h2>"
+    # regex2 = r"<h2 class=\"entry-title idish\"><a href=\"(.*?)\" rel=\"bookmark\">(.*?)<\/a><\/h2>"
     for page_num in range(1, 23):
         url = f"https://www.gazetaeao.ru/category/idish/page/{page_num}/"
         # page = requests.get(url)
@@ -34,6 +39,7 @@ def scrape_bs():
                                                                                 end=match.end(groupNum),
                                                                                 group=match.group(groupNum)))
 
+    driver.close()
 
 if __name__ == '__main__':
     scrape_bs()
