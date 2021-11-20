@@ -20,7 +20,7 @@ def is_yiddish_title(title):
 def scrape_bs():
     regex1 = r"<h2 class=\"entry-title(?: idish)*\"><a href=\"(.*?)\" rel=\"bookmark\">(.*?)<\/a><\/h2>"
     # regex2 = r"<h2 class=\"entry-title idish\"><a href=\"(.*?)\" rel=\"bookmark\">(.*?)<\/a><\/h2>"
-    counter = 1
+    counter = 1000
     for page_num in range(1, 23):
         url = f"https://www.gazetaeao.ru/category/idish/page/{page_num}/"
         # page = requests.get(url)
@@ -33,7 +33,7 @@ def scrape_bs():
 
             if is_yiddish_title(article_title):
                 article_page_content = get_page_source(article_url)
-                res = re.findall(r"<div class=\"entry-content\">((.|\n)*?)<\/div>", article_page_content)
+                res = re.findall(r"<div class=\"entry-content(?: idish)*\">((.|\n)*?)<\/div>", article_page_content)
                 try:
                     clean_text = re.sub(r"<.*?>", " ", res[0][0], 0, re.MULTILINE)
                 except:
