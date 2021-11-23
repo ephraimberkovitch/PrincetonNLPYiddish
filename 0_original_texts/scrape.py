@@ -1,6 +1,7 @@
 import re
 import requests
 from selenium import webdriver
+from itertools import chain
 
 
 driver = webdriver.Chrome()
@@ -13,8 +14,13 @@ def get_page_source(url):
 
 
 def is_yiddish_title(title):
-    heb_ab = [chr(1488+code) for code in range(27)]
-    return any(char in title for char in heb_ab)
+    #heb_ab = [chr(1488+code) for code in range(27)]
+    heb_ab = chain(range (1488,1515),range(1519,1523), range (1425, 1442),
+                   range(1443, 1466), range(1467,1470), range(1471, 1472),
+                   range(1473,1475), range(1476, 1477))
+    heb_abc = [chr(code) for code in heb_ab]
+    return any(char in title for char in heb_abc)
+    #return any(char in title for char in heb_ab)
 
 
 def scrape_bs():
