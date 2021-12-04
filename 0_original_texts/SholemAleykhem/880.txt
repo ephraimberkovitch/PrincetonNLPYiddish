@@ -1,5 +1,5 @@
 <body dir="rtl" style='font-family:"Times New Roman",Ariel,FreeSerif;'>
-<h1>מעשׂיות פֿאַר ייִדישע קינדער: צער בעלי־חײם           </h1>
+<h1>מעשׂיות פֿאַר ייִדישע קינדער: צער בעלי־חײם </h1>
 <h2>שלום עליכם</h2>
 <h3>פֿון <a href="https://www.cs.uky.edu/~raphael/yiddish/sholemAleykhem/contents.html">
 www.cs.uky.edu/~raphael/yiddish/sholemAleykhem/contents.html</a></h3>
@@ -245,7 +245,7 @@ www.cs.uky.edu/~raphael/yiddish/sholemAleykhem/contents.html</a></h3>
 ― פֿאַרגאַנגען דיר דער כרײן אין די אױגן אַרײַן? אַ מכּה דער מאַמע! ס'האַרבער כרײן דאָס איז! פֿאַרגעסן אים אָנזאָגן צומאַכן די אױגן,
 אַ צרה איז מיר!... נאַ דיר מײַן פֿאַרטוך... װיש אױס די אױגן, נאַריש ייִנגל, און די נאָז אין אײנװעגס װיש אָפּ... די נאָז די נאָז...
 </p><p></p><p>
-                                                געשריבן אין יאָר 1903.
+ געשריבן אין יאָר 1903.
 </p><p>
 צען קלײנע מעשׂהלעך.
 </p><p></p><p>
