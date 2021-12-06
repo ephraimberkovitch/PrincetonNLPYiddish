@@ -1,0 +1,101 @@
+chapter: סאָציאַליסטישע און אַנטיפֿאַשיסטישע לידער
+songname: אַ טאָג פֿון נקמה!
+songname_eng: A tog fun nekome!
+transcriber: מאַרק טריוס
+textby: מרדכי געבירטיג
+musicby: מאַרק טריוס
+lyrics: |
+  און איך זאָג אײַך, ברידער, געדענקט װאָס איך זאָג!
+  די אײנציקע טרײסט און נחמה.
+  ס׳װעט קומען, איר הערט? ס׳װעט קומען אַ טאָג,
+  װאָס װעט פֿאַר אונדז נעמען נקמה!
+  
+  נקמה פֿאַר אונדזערע לײַדן און פּײַן,
+  פֿאַר בלוט, װאָס די שונאים פֿאַרגיסן,
+  נקמה פֿאַר די, װאָס פֿון זײער געבײן
+  װעט קײן מאָל קײַן מענטש זיך דערװיסן,
+  
+  נקמה פֿאַר מעשים אין סדום נישט געהערט,
+  פֿאַר מאַמעס, יתומים, אלמנות,
+  נקמה װעט שרײַען אַרױס פֿון דער ערד,
+  דאָס בלוט פֿון מליאָנען קרבנות.
+  
+  דער מענטש װעט דערװאַכן, קײן ספֿק נישט מער,
+  דערעזן דעם גרױל פֿון מלחמה.
+  װי אונדזערס אַ נביא אַ הילך טאָן װעט ער:
+  נקמה! כ׳װעל נעמען נקמה!
+  
+  ס׳װעט קומען דער טאָג, יאָ, איך האָף און גלױב,
+  איך זע, ברידער, זײן אָנקום פֿון װײַטן
+  און ברענגען װעט ער אונדז װי נחס אַ טױב
+  אַ בשורה פֿון פֿרידלעכע צײַטן.
+
+linewidth: און איך זאָג אײַך, ברידער, געדענקט װאָס איך זאָג! # Longest line
+lilypond:
+  variables: |
+    mel = \relative d'{ 
+      \partial 4 { d8 fs }
+      g4( fs8) g bf g4 g8 |
+      bf4 g8 g g4 r8 c |
+      bf4 a8 bf c bf4 a8 |
+      g4 d r4 g8( a) |
+      \repeat volta 2 {
+        bf a4 g8 d'4 c8( d) |
+        ef4 d8 c a4 r8 d, |
+      }
+      \alternative {
+        {
+          g4 a8 bf a4 g8 a  |
+          bf4 bf r g8( a)
+          }
+        {
+          g4 a8 bf a4 g8 fs |
+          \end 3/4 g4 g r
+          }
+        }
+      }
+
+    acc = \chordmode { 
+      \partial 4 {s4}
+      g1:m |
+      ef: |
+      g2:m c:m |
+      g1:m |
+      \repeat volta 2 {
+        g2:m d:7 |
+        c:m d:7 |
+      }
+      \alternative {
+        {
+          g:m f: |
+          bf1
+          }
+        { 
+          g2:m d:7 | 
+          g2.:m
+          }
+        }
+      }
+  scores:
+    - 
+      clef: treble
+      key: 'g \minor'
+      time: '4/4'
+      tempo: Andantino
+      melody: |
+        \mel
+        \bar "|."
+      accompaniment: |
+        \acc
+      lyrics: |
+        Un ikh zog aykh bri -- der, ge -- denkt vos ikh zog!
+        Di eyn -- tsi -- ke treyst un ne -- kho -- me,
+        S'vet 
+        \repeat volta 2 {
+          ku -- men, ir hert? S'vet ku -- men a tog,
+          vos 
+          }
+        \alternative {
+          { vet far undz ne -- men ne -- ko -- me! vos }
+          { vet far undz ne -- men ne -- ko -- me! }
+          }

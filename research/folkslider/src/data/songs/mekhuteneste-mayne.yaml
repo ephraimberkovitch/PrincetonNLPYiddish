@@ -1,0 +1,117 @@
+chapter: קאָמישע לידער
+songname: מחותנתטע מײַנע
+songname_eng: Mekhuteneste Mayne
+transcriber: מאַרק טריוס
+lyrics: |
+  מחותנתטע מײַנע,
+  מחותנתטע געטרײַע,
+  לאָמיר זײַן אױף אײביק מחותנים.
+  איך גיב אײַך אַװעק,
+  מײַן טאָכטער פֿאַר אַ שנור,
+  זי זאָל בײַ אײַך ניט אָנװערן דאָס פּנים.
+  
+  מחותנתטע מײַנע,
+  מחותנתטע געטרײַע,
+  איר זאָלט מײַן טאָכטער פֿרי ניט װעקן,
+  און טאָמער װעט איר זען,
+  אַן עװלה אױף מײַן קינד,
+  װי אַן אײַגענע מאַמע,
+  זאָלט איר דאָס פֿאַרדעקן.
+  
+  מחותנתטע מײַנע,
+  מחותנתטע געטרײַע,
+  אױף קינדער האָבן טוט מען בלוט פֿאַרגיסן,
+  און טאָמער װעט איר זען,
+  אַז דער זון האָט ליב די שנור,
+  זאָל עס אײַך גאָרניט פֿאַרדריסן.
+
+linewidth: אױף קינדער האָבן טוט מען בלוט פֿאַרגיסן, # Longest line
+lilypond:
+  variables: |
+    mel = \relative e' {
+        \partial 8 {a16 a} |
+        d4 a8. g16 |
+        fs( g) a4 d,16 d |
+        g8 g fs ef |
+        fs d4 d8 |
+        g g g g |
+        g d bf' a g2 |
+        g4. g8 |
+        bf bf bf bf |
+        bf a16( bf) c8 bf |
+        a2 |
+        c |
+        \repeat volta 2 {
+          c8 d ef d |
+          c4. bf8 |
+          c bf a g |
+          a4. g8 |
+          fs g a g |
+          fs c fs ef |
+          }
+        \alternative {
+          {
+            d4( fs) |
+            a( d) |
+            }
+          {
+            d2 |
+            \end 3/8 d4 r8 
+            }
+          }
+        }
+    
+    acc = \chordmode {
+      \partial 8 { s8 }
+      d2: |
+      d:7 |
+      g:m |
+      d:7 |
+      g:m |
+      g4.:m d8:7 |
+      g2:m |
+      g:m |
+      g:m |
+      g:m |
+      d:7 |
+      d:7 |
+      \repeat volta 2 {
+        c:m |
+        c:m |
+        c:m |
+        d:7 |
+        d:7 |
+        d:7 |
+        }
+      \alternative {
+        {
+          d:7 |
+          d:7 |
+          }
+        {
+          d:7 |
+          d4.:7  |
+          }
+        }
+      }
+  scores:
+    - 
+      clef: treble
+      key: 'g \minor'
+      time: '2/4'
+      tempo: Allegretto
+      melody: |
+        \mel
+        \bar "|."
+      accompaniment: |
+        \acc
+      lyrics: |
+        Me -- khu -- te -- nes -- te may -- ne,
+        me -- khu -- te -- nes -- te ge -- tra -- ye,
+        oy, lo -- mir zayn oyf ey -- bik me -- khu -- to -- nim.
+        Oy, lo -- mir zayn oyf ey -- bik me -- khu -- to -- nim.
+        Ikh gib aykh a -- vek mayn tokh -- ter far a shnur,
+        \repeat volta 2 {
+          zi zol bay aykh nit on -- ve -- rn dos
+          }
+        \alternative { \repeat unfold 2 { po -- nim. } }

@@ -1,0 +1,91 @@
+chapter: ליבעלידער
+songname: לאָמיר זיך איבערבעטן
+songname_eng: Lomir Zikh Iberbetn
+transcriber: מאַרק טריוס
+lyrics: |
+  לאָמיר זיך איבערבעטן, איבערבעטן,
+  שטעל דעם סאַמאָװאַר!
+  לאָמיר זיך איבערבעטן,
+  זײַ זשע ניט קײן נאַר!
+
+  לאָמיר זיך איבערבעטן, איבערבעטן,
+  קױף אַ פּאָר מאַראַנצן!
+  לאָמיר זיך איבערבעטן,
+  װעלן מיר גײן טאַנצן!
+
+  לאָמיר זיך איבערבעטן, איבערבעטן,
+  קױף אַ פֿונט פֿיסטאָשקעס!
+  לאָמיר זיך איבערבעטן,
+  שענק מיר דײנע לאַסקעס!
+
+  לאָמיר זיך איבערבעטן, איבערבעטן,
+  אין האַרצן ברענט אַ פֿײַער —
+  לאָמיר זיך איבערבעטן,
+  ליבע איז דאָך טײַער.
+
+  לאָמיר זיך איבערבעטן, איבערבעטן,
+  װאָס שטײסטו בײַ דער טיר?
+  לאָמיר זיך איבערבעטן
+  קום ארײַן צו מיר!
+
+  לאָמיר זיך איבערבעטן, איבערבעטן,
+  װאָס שטײסטו בײַ דעם פֿענצטער?
+  לאָמיר זיך איבערבעטן —
+  דו ביסט דאָך מײַן שענסטער!
+
+linewidth: לאָמיר זיך איבערבעטן, איבערבעטן, # Longest line
+lilypond:
+  variables: |
+    mel = \relative g'{ 
+      g8 g4 g8 |
+      b af16( b) af8 g |
+      b af16( b) af8 g |
+      g' d ef d |
+      c2 |
+      g'8 d ef d |
+      c2 |
+      \repeat unfold 2 {d8 d4 c8 |
+        b af16( g) f8 f |
+        g af b af |
+        }
+      \alternative{
+        { b2 |}
+        { g2}
+        }
+      }
+
+    acc = \chordmode { 
+      \repeat unfold 4 { g2:7 | }
+      c:m |
+      g:7 |
+      c:m |
+      g:7 |
+      f:m |
+      f:m |
+      g |
+      d:7 |
+      f:m |
+      f:m |
+      g
+      }
+  scores:
+    - 
+      clef: treble
+      key: 'g \phrygian'
+      time: '2/4'
+      tempo: Allegretto
+      melody: |
+        \mel
+        \bar "|."
+      accompaniment: |
+        \acc
+      
+      lyrics: |
+        Lo -- mir zikh i -- ber -- be -- tn,
+        i -- ber -- be -- tn,
+        shtel dem sa -- mo -- var!
+        Shtel dem sa -- mo -- var!
+        \repeat unfold 2 { 
+          Lo -- mir zikh i -- ber -- be -- tn,
+          zay zhe nit keyn nar! 
+        }

@@ -1,0 +1,32 @@
+songs_dir: 'songs'
+templates_dir: 'templates'
+root_dir: ''
+data_dir: 'src/data'
+book:
+    chapters: 
+    - סאָציאַליסטישע און אַנטיפֿאַשיסטישע לידער
+    - ליבעלידער
+    - לידער װעגן ייִדיש און ייִדישקײַט
+    - לידער װעגן משפּחה און לעבן
+    - לידער װעגן נױט און אָרעמקײַט
+    - אימיגראַנטישע לידער
+    - װיגלידער
+    - קינדערלידער
+    - קאָמישע לידער
+    name:    ייִדישע פֿאָלקסלידער
+    filename: yidishe-folkslider
+templates:
+    tex:
+        book: 
+            name: book_tex
+            directory: tmp
+            renderers: [lyrics_tex]
+        leadsheet: 
+            name: leadsheet_tex
+            directory: tmp
+            renderers: [lyrics_tex]
+        score: 
+            name: lilypond
+            directory: output/lilypond
+            renderers: []
+    

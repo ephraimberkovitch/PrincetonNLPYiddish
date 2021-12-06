@@ -1,0 +1,99 @@
+chapter: לידער װעגן ייִדיש און ייִדישקײַט
+songname: שפּיל זשע מיר אַ לידעלע אין ייִדיש
+songname_eng: Shpil Zhe Mir a Lidele in Yidish
+transcriber: מאַרק טריוס
+textby: י. קאָטליאַר
+lyrics: |
+  שפּיל זשע מיר אַ לידעלע אין ייִדיש,
+  דערװעקן זאָל עס פֿרײד און ניט קײן חידוש,
+  אַז אַלע מענטשען, גרױס און קלײן,
+  זאָלן עס פֿאַרשטײן —
+  פֿון מױל צו מױל דאָס לידעלע זאָל גײן!
+
+  *רעפּרען:*
+  שפּיל, שפּיל, כלי־זמרל שפּיל —
+  װײסט דאָך, װאָס איך מײן און װאָס איך װיל;
+  שפּיל, שפּיל, אַ לידעלע פֿאַר מיר,
+  שפּיל אַ לידעלע מיט האַרץ און מיט געפֿיל!
+
+  אַ לידעלע אָן זיפֿצן און אָן טרערן —
+  שפּיל אזױ, אַז אַלע זאָלן הערן,
+  אַז אַלע זאָלן זען:
+  איך לעב און זינגען קען,
+  שענער נאָך און בעסער, װי געװען!
+
+  שפּיל זשע מיר אַ לידל װעגן שלום!
+  זאָל שױן זײַן שלום — קײן חלום!
+  אַז אַלע פֿעלקער, גרױס און קלײן,
+  זאָלן קענען דאָס פֿאַרשטײן,
+  אָן קריגן און מלחמות זיך באַגײן…
+
+  לאָמיר זינגען ס׳לידעלע צוזאַמען,
+  װי גוטע פֿרײַנד, װי קינדער פֿון אײן מאַמען!
+  מײַן אײנציקער פֿאַרלאַנג:
+  ס׳זאָל קלינגען פֿרײַ און פֿראַנק
+  אין אַלעמענס געזאַנג — אױך מײַן געזאַנג!
+
+linewidth: װײסט דאָך, װאָס איך מײן און װאָס איך װיל; — # Longest line
+lilypond:
+  variables: |
+    mel = \relative f'{ 
+      g8. a16 bf8 c bf8. a16 g8 a |
+      bf g~g4 r r8. c16 |
+      bf8 c d ef d c bf8. c16 |
+      d8 bf~bf4 r r8 d |
+      d ef f g f4 r8 f |
+      f8. ef16 d8 c g'4 r8 c, |
+      bf c d c bf f g af |
+      g2. r4 |\bar "||"
+      g'2 g |
+      g4 f16 ef8. f4. r8 |
+      g8. f16 ef8 d ef f g ef |
+      d2. r4 |
+      f2 f4 r8 g |
+      af g f ef d r d ef |
+      f ef d c bf8. c16 bf8 af |
+      g2. r4
+      }
+
+
+    acc = \chordmode { 
+      g1:m |
+      g:m |
+      bf1: |
+      bf: |
+      g:7 |
+      f2: g: |
+      g2:m bf:7 |
+      g1:m |
+      g:7 |
+      c2:m f: |
+      ef2:7 c:m |
+      bf1: |
+      g:7 |
+      bf2:7 d:7 |
+      f1:m7 |
+      g1:m
+      }
+  scores:
+    - 
+      clef: treble
+      key: 'g \minor'
+      time: '4/4'
+      tempo: Moderato
+      melody: |
+        \mel
+        \bar "|."
+      accompaniment: |
+        \acc
+      lyrics: |
+        Shpil zhe mir a li -- de -- le in yi -- dish,
+        der -- ve -- kn zol es freyd un nit keyn khi -- desh,
+        az a -- le men -- tshen, groys un kleyn,
+        zol -- n es far -- shteyn,
+        fun moyl tsu moyl dos li -- de -- le zol geyn!
+        
+        Shpil, shpil, klez -- me -- rl, shpil,
+        veyst dokh vos ikh meyn un vos ikh vil;
+        shpil, shpil! A li -- de -- le far mir,
+        shpil a li -- de -- le mit harts un mit ge -- fil!

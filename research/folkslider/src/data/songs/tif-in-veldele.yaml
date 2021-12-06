@@ -1,0 +1,85 @@
+chapter: ליבעלידער
+songname: טיף אין װעלדעלע
+songname_eng: Tif in Veldele
+transcriber: מאַרק טריוס
+lyrics: |
+  טיף אין װעלדעלע
+  װאַקסט אַ בײמעלע,
+  און די צװײַגעלעך בליִען;
+  און בײַ מיר, אָרעם שנײַדערל,
+  טוט דאָס הערצעלע ציִען.
+  
+  אױפֿן בײמעלע
+  װאַקסט אַ צװײַגעלע,
+  און די בלעטעלעך צװיטען;
+  און מײַן אָרעם שװאַך הערצעלע
+  ציט צו מײַן ליבער איטען.
+  
+  אױפֿן צװײַגעלע
+  שטײט אַ פֿײגעלע,
+  און דאָס פֿײגעלע פּישטשעט;
+  און בײַ מיר, אָרעם שנײַדערל,
+  מײַן שװאַך הערצעלע טרישטשעט…
+linewidth: מײַן שװאַך הערצעלע טרישטשעט… # Longest line (for typesetting lyrics)
+lilypond: 
+  variables: |
+    mel = \relative g'{ 
+      d4 d8 d d d |
+      g( fs) g ef16 d c4 |
+      \repeat unfold 2{ 
+        fs g8 a fs d |
+        g4( a16 g) fs4 r8 |
+        }
+      \repeat volta 2 {
+        bf( a) g fs4( d8) |
+        g( fs) g ef16 d c4 |
+        c4 c8 ef d c |
+        }
+      \alternative {
+        { d4. d }
+        { d4. g }
+        }
+      }
+
+    acc = \chordmode { 
+      g2.:m |
+      c4.:m f4.:7 |
+      \repeat unfold 2 {
+        d2.:7 |
+        g2.:m |
+        }
+      \repeat volta 2 {
+        g4.:m d:7 |
+        g:m c:m |
+        f:7 a:dim |
+        }
+      \alternative {
+        { d2.:7 }
+        { \once \set chordChanges = ##f d4.:7 g:m | }
+        }
+      }
+  scores:
+    - 
+      clef: treble
+      key: 'g \minor'
+      time: '6/8'
+      tempo: Allegretto
+      melody: |
+        \mel
+        \bar "|."
+      accompaniment: |
+        \acc
+      
+      lyrics: |
+        Tif in vel -- de -- le
+        vakst a bey -- me -- le
+        un di tsvay -- ge lekh bli -- en;
+        un di tsvay -- ge -- lekh bli -- en.
+        \repeat volta 2 {
+          Un bay mir o -- rem shay -- de -- rl,
+          tut dos her -- tse -- le 
+          }
+        \alternative {
+          { tsi -- en. }
+          { tsi -- en. }
+          }

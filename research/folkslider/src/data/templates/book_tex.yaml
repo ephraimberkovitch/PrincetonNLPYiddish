@@ -1,0 +1,96 @@
+extension: lytex
+renderer: tex
+template: |
+  \documentclass{book}
+  
+  \usepackage[letterpaper,inner=1.25in,outer=1.75in]{geometry}
+  
+  \usepackage{fmtcount, titlesec, fancyhdr}
+  
+  \usepackage{multicol, verse, fontspec, graphicx, polyglossia}
+  \setmainlanguage{hebrew}
+  \setmainfont{Drugulin CLM}
+  \newfontfamily{\hebrewfont}{Drugulin CLM}[
+    ItalicFont={Drugulin CLM},%No Italic shapes
+    ItalicFeatures={WordSpace=1.25, LetterSpace=15}% Set features for emphasis by letter space
+    ]
+  
+  %prevent widows and orphans
+  
+  \widowpenalty10000
+  \clubpenalty10000
+  
+  % Yiddish Things
+  
+  \gappto\captionshebrew{%
+    \def\prefacename{מבוא}%
+    \def\refname{מקורות}%
+    \def\abstractname{תקציר}%
+    \def\bibname{ביבליוגרפיה}%
+    \def\chaptername{קאַפּיטאַל}%
+    \def\appendixname{נספח}%
+    \def\contentsname{תוכן העניינים}%
+    \def\listfigurename{רשימת האיורים}%
+    \def\listtablename{רשימת הטבלאות}%
+    \def\indexname{מפתח}%
+    \def\figurename{איור}%
+    \def\tablename{טבלה}%
+    \def\partname{חלק}%
+    \def\enclname{רצ"ב}%
+    \def\ccname{העתקים}%
+    \def\headtoname{אל}%
+    \def\pagename{עמוד}%
+    \def\psname{נ.ב.}%
+    \def\seename{ראה}%
+    \def\alsoname{ראה גם}% check
+    \def\proofname{הוכחה}
+    \def\glossaryname{מילון מונחים}% check
+    }
+  
+  \newcommand\yiddishordinal[1]{%
+    \ifcase\value{#1}סטער\or
+      ערשטער\or
+      צװײטער\or
+      דריטער\or
+      פֿערטער\or
+      פֿינפֿטער\or
+      זעקסטער\or
+      זיבעטער\or
+      אַכטער\or
+      נײַנטער\or
+      צענטער\or
+      עלפֿטער\or
+      צװעלפֿטער\or
+      דרײַצנטער\or
+      פֿערצנטער\or
+      פֿופֿצנטער\or
+      זעכצנטער\or
+      זיבעצנטער\or
+      אַכצנטער\or
+      נײַנצנטער%
+    \fi
+    }
+    \titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries}
+    {\yiddishordinal{chapter}~\chaptertitlename}
+    {20pt}
+    {\huge}
+  
+  \renewcommand{\chaptermark}[1]{%
+    \markboth{\yiddishordinal{chapter} \chaptername:\ #1}{}}
+  
+  
+  \begin{document}
+  <!--(for chapter in book_tex)-->
+  \chapter{@!chapter['chapter name']!@}
+    <!--(for song in chapter['songs'])-->
+    \newpage\lilypondfile[noindent]{../lilypond/@!song!@.ly}
+    \begin{multicols}{2}
+    \settowidth{\versewidth}{@!chapter['songs'][song]['linewidth']!@}
+    \begin{verse}[\versewidth]
+    @!render['lyrics_tex'](chapter['songs'][song]['lyrics'])!@
+    \end{verse}
+    \end{multicols}
+    <!--(end)-->
+  <!--(end)-->
+  \end{document}

@@ -1,0 +1,106 @@
+chapter: ליבעלידער
+songname: טום־באַלאַלײַקע
+songname_eng: Tum-Balalayke
+transcriber: מאַרק טריוס
+lyrics: |
+  שטײט אַ בחור  און ער טראַכט,
+  טראַכט און טראַכט אַ גאַנצע נאַכט:
+  װעמען צו נעמען און ניט פֿאַרשעמען,
+  װעמען צו נעמען און ניט פּאַרשעמען.
+
+  *רעפֿרען*
+  טום־באַלאַ, טום־באַלאַ, טום־באַלאַלײַקע,
+  טום־באַלאַ, טום־באַלאַ, טום־באַלאַלײַקע!
+  טום־באַלאַלײַקע, שפּיל באַלאַלײַקע,
+  טום־באַלאַלײַקע, פֿרײלעך זאָל זײַן!
+
+  — מײדל, מײדל, כ׳װיל בײַ דיר פֿרעגן:
+  װאָס קאָן װאַקסן אָן רעגן?
+  װאַס קאָן ברענען, און ניט אױפֿהערן?
+  װאָס קאָן בענקען, װײנען אָן טרערן?
+
+  — נאַרישער בחור, װאָס דאַרפֿסטוּ פֿרעגן?
+  אַ שטײן קאָן װאַקסן, אָן רעגן.
+  ליבע קאָן ברענען און ניט אױפֿהערן,
+  אַ האַרץ קאָן בענקען, װײנען אָן טרערן.
+
+linewidth: טום־באַלאַ, טום־באַלאַ, טום־באַלאַלײַקע! # Longest line
+lilypond:
+  variables: |
+    mel-a = \relative fs''{ 
+      d2 d4 |
+      d2 d4 |
+      d( c) bf |
+      a2. |
+      c2 c4 |
+      c2 d4 |
+      c( bf) a |
+      g2. |
+      g4 bf d |
+      g2 g4 |
+      bf a g |
+      d2 d4 |
+      f ef d |
+      a2 c4 |
+      c bf a |
+      g2 g4 |
+      }
+    mel-b = \relative fs'' {
+      d4 d d |
+      d d d |
+      d c bf |
+      a2 a4 |
+      c c c |
+      c c c |
+      c bf a |
+      g2 g4 |
+      g bf d |
+      g2 g4 |
+      bf a g | 
+      d2 f4 |
+      f ef d |
+      a2 c4 |
+      c bf a |
+      g2.
+      }
+
+    acc-a = \chordmode { 
+      g2.:m |
+      g:m |
+      g:m |
+      d:7 |
+      c:m6 |
+      c:m6 |
+      d:7 |
+      \repeat unfold 3 { g:m }
+      c:m6
+      d:7 |
+      c:m6 |
+      c:m6 |
+      d:7 |
+      g:m |
+      }
+  scores:
+    - 
+      clef: treble
+      key: 'g \minor'
+      time: '3/4'
+      tempo: Moderato
+      melody: |
+        \mel-a
+        \bar "||"
+        \mel-b
+        \bar "|."
+      accompaniment: |
+        \acc-a
+        \once \set chordChanges = ##f
+        \acc-a
+      lyrics: |
+        Shteyt a bo -- kher  un er trakht,
+        trakht un trakht a gan -- tse nakht:
+        ve -- men tsu ne -- men un nit far -- she -- men,
+        ve -- men tsu ne -- men un nit far -- she -- men.
+        Tum -- ba -- la, tum -- ba -- la, tum ba -- la -- lay -- ke,
+        Tum -- ba -- la, tum -- ba -- la, tum ba -- la -- lay -- ke!
+        Tum ba -- la -- lay -- ke, shpil ba -- la -- lay -- ke,
+        Tum ba -- la -- lay -- ke, frey -- lekh zol zayn!

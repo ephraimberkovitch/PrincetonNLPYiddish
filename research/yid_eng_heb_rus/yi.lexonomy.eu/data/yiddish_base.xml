@@ -1,0 +1,26 @@
+<yiddish>
+    <entry xmlns:lxnm='http://www.lexonomy.eu/' lxnm:entryID='1'>
+        <yiddish>אַדיציע</yiddish>
+        <gloss>NOUN.FEM</gloss>
+        <base>aditsye</base>
+        <romanized>aditsye</romanized>
+        <eng>addition (mathematics)</eng>
+        <simpleForm>אדיציע</simpleForm>
+    </entry>
+    <entry xmlns:lxnm='http://www.lexonomy.eu/' lxnm:entryID='2'>
+        <yiddish>אַדאָפּטירסטו</yiddish>
+        <gloss>V.2.SG</gloss>
+        <base>adoptir</base>
+        <romanized>adoptirstu</romanized>
+        <eng>adopt</eng>
+        <simpleForm>אדאפטירסטו</simpleForm>
+    </entry>
+    <entry xmlns:lxnm='http://www.lexonomy.eu/' lxnm:entryID='3'>
+        <yiddish>כריזאַנטעמע</yiddish>
+        <gloss>NOUN.FEM</gloss>
+        <base>khrizanteme</base>
+        <romanized>khrizanteme</romanized>
+        <eng>chrysanthemum (flower)</eng>
+        <simpleForm>כריזאנטעמע</simpleForm>
+    </entry>
+</yiddish>

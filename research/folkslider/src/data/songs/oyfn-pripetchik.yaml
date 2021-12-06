@@ -1,0 +1,128 @@
+chapter: לידער װעגן ייִדיש און ייִדישקײַט
+songname: אױפֿן פּריפּעטשיק ברענט אַ פֿײַרל
+songname_eng: Oyfn Pripetchik Brent a Fayrl
+transcriber: מאַרק טריוס
+textby: מאַרק װאַרשאַװסקי
+lyrics: |
+  אױפֿן פּריפּעטשיק ברענט אַ פֿײַרל, 
+  און אין שטוב איז הײס, 
+  און דער רבי לערנט קלײַנע קינדערלעך 
+  דעם אלף־בית. 
+
+  *רעפֿרען:*
+  זאָגט זשע קינדערלעך, געדענקט זשע, טײַערע, 
+  װאָס איר לערנט דאָ, 
+  זאָגט זשע נאָך אַ מאָל און טאַקע נאָך אַ מאָל: 
+  קמץ־אלף אָ!  
+
+  לערנט קינדערלעך, האָט ניט מורא, 
+  יעדער אָנהײב איז שװער. 
+  גליקליך איז דער ייִד װאָס לערנט תורה 
+  װאָס דאַרפֿן מיר נאָך מער?  
+
+  אַז איר װעט, קינדערלעך, עלטער װערן, 
+  װעט איר אלײן פֿאַרשטײן, 
+  װיפֿל אין די אותיות ליגן טרערן, 
+  און װי פֿיל געװײן.  
+
+  לערנט קינדערלעך, מיט גרױס חשק 
+  אַזױ זאָג איך אײך אָן, 
+  װער ס'װעט בעסער פֿון אײך קענען עברי 
+  דער באַקומט באַקומט אַ פֿאָן. 
+
+  אַז איר װעט, קינדערלעך, דעם גלות שלעפֿן 
+  אױסגעמוטשעט זײַן, 
+  זאָלט איר פֿון די אותיות כוח שעפֿן, 
+  קוקט אין זײ אַרײַן. 
+
+linewidth: אַז איר װעט, קינדערלעך, דעם גלות שלעפֿן # Longest line
+lilypond:
+  variables: |
+    mel-a = \relative g'{ 
+      g8 a bf bf bf4 |
+      a8 c bf a g4 |
+      g8 a bf4 c |
+      d2. 
+      }
+    mel-b = \relative g''{ 
+      \repeat volta 2 {
+        g8 d f ef c a |
+        c ef d bf g4 |
+        }
+      \alternative {
+        { a8( c) bf4 c | 
+          d2. 
+          }
+        { a8( c) bf4 a | 
+          g2. 
+          }
+        }
+      }
+    mel-c = \relative g'{ 
+      g8 bf a fs d4 | 
+      a'8 c bf a g4 | 
+      bf8 a bf4 c | 
+      d2. | 
+      }
+
+    acc-a = \chordmode { 
+      g2.:m | 
+      c4:m d:7 g:m | 
+      g:m c:m7 f:7 | 
+      bf2.  
+      }
+    acc-b = \chordmode { 
+      \repeat volta 2 { 
+        g4:7 c2:m7+ | 
+        f4:7 g2:m | }
+      \alternative {
+        { c4:m f2:7 | bf2 f4:m }
+        { c4:m d2:7 | g2.:m }
+        }
+      }
+                          
+    acc-c = \chordmode { 
+      d2.:7 | 
+      g:m | 
+      c4:m f2:7 | 
+      bf: f4:m | 
+      }
+  scores:
+    - 
+      clef: treble
+      key: 'g \minor'
+      time: '3/4'
+      tempo: Andantino
+      melody: |
+        \mel-a
+        \mel-b
+        \bar "|."
+        \mel-c
+        \mel-b
+        \bar "|."
+      accompaniment: |
+        \acc-a
+        \acc-b
+        \acc-c
+        \acc-b
+      lyrics: |
+        Oy -- fn pri -- pe -- tchik brent a fa -- y -- rl,
+        un in shtub iz heys,
+
+        \repeat volta 2 {
+          un der re -- be le -- rnt klay -- ne kin -- der -- lakh
+          }
+        \alternative {
+          { dem a -- lef beys }  
+          { dem a -- lef beys }
+          }
+        Zetz zhe kin -- der -- lakh,
+        gedank zhe ta -- ye -- re
+        vos ir he -- rn do,
+        \repeat volta 2 {
+          zog zhe nokh a mol un ta -- ke nokh a mol
+        }
+        \alternative {
+          { kometz a -- lef: o }
+          { kometz a -- lef: o }
+          }

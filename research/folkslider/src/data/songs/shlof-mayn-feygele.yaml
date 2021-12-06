@@ -1,0 +1,86 @@
+chapter: װיגלידער
+songname: שלאָף, מײַן פֿײגעלע
+songname_eng: Shlof, Mayn Feygele
+transcriber: מאַרק טריוס
+lyrics: |
+  שלאָף מײַן פֿײגעלע
+  מאַך צו דײַן אײגעלע
+  אײַ ליו ליו ליו
+
+  שלאָף געשמאַק מײַן קינד
+  שלאָף און זײַ גע זונט
+  אײַ ליו ליו ליו
+
+  שלאָף און חלום זיס
+  פֿון דער װעלט געניס
+  אײַ ליו ליו ליו
+
+  ביז װאַנען דו ביסט יונג
+  קאָנסטו שלאָפֿן גרינג
+  לאַכן פֿון אלצדינג
+  אײַ ליו ליו ליו
+
+linewidth: ביז װאַנען דו ביסט יונג # Longest line
+lilypond:
+  variables: |
+    mel = \relative e'{ 
+      d8 g bf bf bf4 | 
+      d,16 d g8 bf bf bf4 | 
+      c8( bf) c( bf) a( g) | 
+      bf2. |
+      d,8 g bf bf bf4 | 
+      d,8 g bf bf bf4 | 
+      c8( bf) c( bf) a( g) | 
+      a2. |
+      d,8 fs a a a4 | 
+      d,8 fs a a a4 | 
+      c8( bf) c( bf) a(g ) | 
+      c2 r8 c |
+      c8 d c d c4 | 
+      bf8 c bf c bf4 | 
+      a8 bf a bf a4 d,8 fs g2
+      }
+    acc = \chordmode { 
+      g4:m ef2: | 
+      g4:m ef2: | 
+      c2:m a4:m | 
+      g2.:m | 
+      g:m | 
+      g:m | 
+      c:7 | 
+      d:7 |
+      d:7 | 
+      d:7 | 
+      c:m6 | 
+      c:m6 | 
+      d:7 | 
+      ef:7 | 
+      a:7 | 
+      d4:7 g2:m
+      }
+  scores:
+    - 
+      clef: treble
+      key: 'g \minor'
+      time: '3/4'
+      tempo: Andante
+      melody: |
+        \mel
+        \bar "|."
+      accompaniment: |
+        \acc
+      
+      lyrics: |
+        Shlof mayn fey -- ge -- le,
+        makh tzu dayn ey -- ge -- le,
+        ay lyu lyu lyu.
+        Shlof ge -- shmak mayn kind,
+        shlof un zay ge -- zunt,
+        ay lyu lyu lyu.
+        Shlof un kho -- lem zis,
+        fun der velt ge -- nis,
+        ay lyu lyu lyu.
+        Biz vo -- nen du bist yung
+        kon -- stu shlo -- fn gring,
+        lo -- khn fun altz -- ding,
+        ay lyu lyu.

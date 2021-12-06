@@ -1,4 +1,4 @@
-# import pandas as pd
+import pandas as pd
 import os
 import re
 
@@ -112,8 +112,8 @@ def normalize_texts():
 
             # exceptions
             # [{ORTH: "האָסטו"}, {ORTH: "האָסט", NORM: "דו"}]
-            # regex = r"(.+)סטו", subst = " $1סט דו"
-            # regex = r"(.+)tsu", subst = "$1ts du"
+            # regex = r"(.+)סטו", subst = r" \1סט דו"
+            # regex = r"(.+)tsu", subst = r"\1ts du"
 
 
 def normalize(input, remove_diacritics=False):
@@ -140,6 +140,8 @@ def normalize(input, remove_diacritics=False):
     # top hyphen 0x05be vs 0x2d: אני כותב בעברית - כך וכך, תל-אביב תל־אביב תל־אביב
     # output = re.sub("(\w+)-(\w+)", r"\1־\2", output)
     output = re.sub(r"(\w+)-(\w+)", rf"\1{chr(0x05be)}\2", output)
+    # chr(0x05f3)+chr(0x05f3) inside a word -> to chr(0x5f4))
+    output = re.sub(rf"(\w+){chr(0x05f3)}{chr(0x05f3)}(\w+)", rf"\1{chr(0x05f4)}\2", output)
     return output
 
 

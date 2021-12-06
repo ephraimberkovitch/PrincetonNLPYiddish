@@ -1,0 +1,96 @@
+chapter: סאָציאַליסטישע און אַנטיפֿאַשיסטישע לידער
+songname: שטיל, די נאַכט איז אויסגעשטערנט
+songname_eng: Shtil, di Nakht Iz Oysgeshternt
+transcriber: מאַרק טריוס
+textby: הירש גליק
+lyrics: |
+  שטיל, די נאַכט איז אױסגעשטערנט,
+  און דער פֿראָסט האָט שטאַרק געברענט;
+  צי געדענקסטו װי איך האָב דיך געלערנט
+  האַלטן אַ שפּײַער אין די האַנט?
+  
+  אַ מױד אַ פּלעצל און אַ בערעט
+  און האַלט אין האַנט פֿעסט אַ נאַגאַן
+  אַ מױד מיט אַ סאַמענטענעם פּנים
+  היט אָפּ דעם שׂונאס קאַראַװאַן
+  
+  געצילט, געשאָסן און געטראָפֿן
+  האָט איר קלײנינקע פּיסטױל
+  אַן אױטאָ אַ פֿולינקן מיט װאָפֿן
+  פֿאַרהאַלטן האָט זי מיט אײן קױל
+  
+  פֿאַרטאָג פֿון װאַלד אַרױסגעקראָכן
+  מיט שנײגירלאַנדן אױף די האָר
+  געמוטיגט פֿון קלײנינקן נצחון
+  פֿאַר אונדזער נײַעם פֿרײַען דור.
+
+linewidth: צי געדענקסטו װי איך האָב דיך געלערנט # Longest line
+lilypond:
+  variables: |
+    mel = \relative d'' {
+      d4. bf8       |
+      ef d c bf     |
+      c4.( bf16 a   |
+      bf4.) r8      |
+      f'4. d8       |
+      g8 f bf, c    |
+      d2~           |
+      d8 r d d      |
+   
+    \repeat volta 2 {
+       g4 f8 g      |
+       ef ef d g,   |
+       c4.( bf16 a  | 
+       bf4.) r8     |
+       a4 d8 d      |
+       f ef d c     | 
+       }
+    \alternative {
+      {g2~ | g8 r d' d}
+      {g2~ | g4 r }
+      }
+    }
+    
+    acc = \chordmode {
+      { g2:m    |
+        c:m |
+        d:7    |
+        g:m     |
+        bf      |
+        c4:m f:7 |
+        bf2     |
+        bf4 d:7 |
+        }
+      \repeat volta 2 {
+        g2:7    | 
+        ef4 g:m | 
+        f2:7    | 
+        g:m      |
+        d:7     | 
+        d:7 | 
+        }
+      \alternative {
+        { g2:m  |
+          g4:m d:7 |
+          }
+        { g2:m  |
+          g2:m 
+          }
+        }
+      }
+  scores:
+    - 
+      clef: treble
+      key: 'g \minor'
+      time: '2/4'
+      tempo: Andantino
+      melody: |
+        \mel
+        \bar "|."
+      accompaniment: |
+        \acc
+      lyrics: |
+        Shtil, di nakht iz oys -- ge -- shternt
+        un der frost hot shtark ge -- brent.
+        Tsi ge -- denk -- stu vi ikh hob dikh ge -- lernt
+        hal -- tn a shpa -- yer in di hent?

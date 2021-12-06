@@ -1,0 +1,116 @@
+chapter: קאָמישע לידער
+songname: רבנו תּם
+songname_eng: Rabeynu Tam
+textby: איציק מאַנגער
+musicby: הערץ רובין
+transcriber: מאַרק טריוס
+lyrics: |
+  לאָמיר זינגען אַ שײנעס ליד —
+  הײַדל־דידל־דאַם! —
+  װי די גאָלדענע פּאַװע פֿליט
+  איבערן שװאַרצן ים,
+  און טראָגט אַ ליבע־בריװעלע,
+  אַ שײנעס ליבע־בריװעלע,
+  פֿאַר דעם רבינו תּם.
+  
+  װער האָט געשריבן דאָס בריװעלע? —
+  הײַדל־דידל־דאַי! —
+  געשריבן האָט דאָס בריװעלע
+  די מלכּה פֿון טערקײַ.
+  געשריבן עס מיט רױטן טינט
+  און פֿאַרחתמעט עס געשװינד
+  מיט הײסע טרערן דרײַ.
+  
+  װאָס שטײט געשריבן אין בריװעלע? —
+  הײַדל־דידל־דו! —
+  — רבינו תּם, איך ליבע דיך,
+  װאָס זשע שװײַגסטו, נו?
+  איך עסע ניש׳ און טרינקע ניש׳,
+  איך װער צעזעצט פֿון בענקעניש,
+  איך האַבע נישט קײן רו.
+  
+  װאָס זשע טוט רבינו תּם? —
+  הײַדל־דידל־דע! —
+  ער קראַצט די פּאות און די באַרד
+  און מאַכט דרײַ מאָל «פֿע!»
+  און דאָס ציגעלע אין שטאַל,
+  און דאָס װײַסע ציגעלע
+  העלפֿט אים אונטער «מע!»
+  
+  נו, און זי, די רביצין, —
+  הײַדל־דידל־דױ! —
+  זי קלאַפּט אים מיט אַ װאַלגערהאָלץ
+  און זאָגט צו אים אַזױ:
+  — שיקסעס ליגן דיר אין זין,
+  נו, און יאַך, און יאַך װו בין,
+  דײַן הײס געליבטע פֿרױ?
+  
+  טרעפֿט, װער ס׳האָט דאָס ליד געמאַכט, —
+  הײַדל־דידל־דאַם! —
+  אַ שנײדעריונג האָט עס געמאַכט
+  להכעיס דעם רבינו תּם,
+  און שבּת, צװישן טאָג און נאַכט,
+  האָט אַ לץ אַרײַנגעלאַכט
+  אַקוראַט צום גראַם…
+
+linewidth: פֿאַר װאָס זאָלסטו, דושעניו, מיך פֿאַרשעמען # Longest line
+lilypond:
+  variables: |
+    mel = \relative g'{ 
+      g8 g a bf16 bf a8 g g4 |
+      f8 f d fs g2 |
+      f8 f f g16 g d8 c bf( c) |
+      d d16 d d8 d g4 r8 g |
+      
+      a8 a a c bf a g g |
+      a a a c bf a g4 |
+      c8 c16 c c8 c bf4.( g8) |
+      bf bf16 bf a8 a g( a bf c) |
+      \repeat vol 2 { d4 g, r8 d' c bf |
+                      d d g,4 r8 d' c bf |
+                      d d c c bf bf a a | }
+      \alternative {
+        { c4 f, r8 c' bf c | d2. r4 }
+        { g,2. r4 }
+        }
+      }
+
+    acc = \chordmode { 
+      g4:m c:7 g2:m |
+      bf4 d:7 g2:m |
+      bf4 f:7 d:7 ef |
+      d2:7 g:m |
+      d2: g:m |
+      d:7 g:m |
+      c:m ef:7 |
+      c4:m f:7 bf2: |
+      \repeat volta 2 { g4:7 c:m d2:7 |
+        g:m d:7 |
+        g4:m c:m ef: d:7 |
+        }
+      \alternative {
+        { c:m f:7 d2:7 | d1:7 | }
+        { g1:m }
+        }
+      }
+  scores:
+    - 
+      clef: treble
+      key: 'g \minor'
+      time: '4/4'
+      tempo: Allegretto
+      melody: |
+        \mel
+        \bar "|."
+      accompaniment: |
+        \acc
+      
+      lyrics: |
+        Lo -- mir zin -- gen a shey -- nes lid,
+        hay -- dl di -- dl dam!
+        Vi di gol -- de -- ne pa -- ve flit
+        i -- be -- rn shvar -- tsn yam,
+        un trogt a li -- be bri -- ve -- le,
+        a shey -- nes li -- be bri -- ve -- le
+        far dem Ra -- bey -- nu Tam;
+        far dem Ra -- bey -- nu Tam.
