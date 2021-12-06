@@ -1,4 +1,5 @@
-# import pandas as pd
+import numpy as np
+import pandas as pd
 import os
 import re
 
@@ -70,6 +71,40 @@ def add_yiddish_lemmas_to_finkel():
     # 16682 lemmas, 68927 did get lemmas - both
 
 
+def generate_lookup_files():
+    """
+    with open("../1_lookups_data/wordlist_with_lemmas.csv") as f:
+        csv_contents = f.read()
+    normalized_csv_contents = normalize(csv_contents,
+                                        remove_diacritics=True,
+                                        normalize_hyphens=False,
+                                        normalize_apostrophe=False,
+                                        normalize_double_quotes=False)
+    with open("../1_lookups_data/wordlist_with_lemmas_norm.csv", "w") as f:
+        f.write(normalized_csv_contents)
+    """
+    df = pd.read_csv("../1_lookups_data/wordlist_with_lemmas_norm.csv")
+    # df.isnull().sum()
+    records = df.to_dict(orient="records")
+    with open("../research/cadet-notebook/new_lang/lookups/yi_lemma_lookup_1.json", "w") as f1:
+        with open("../research/cadet-notebook/new_lang/lookups/yi_upos_lookup_1.json", "w") as f2:
+            with open("../research/cadet-notebook/new_lang/lookups/yi_features_lookup_1.json", "w") as f3:
+                f1.write("{\n")
+                f2.write("{\n")
+                f3.write("{\n")
+                for record in records:
+                    # Base,Romanized,Yiddish,Gloss,Definition,lemma
+                    if str(record['lemma']) != 'nan':
+                        f1.write(f"\"{record['Yiddish']}\":\"{record['lemma']}\",\n")
+                    f2.write(f"\"{record['Yiddish']}\":\"{record['Gloss']}\",\n")
+                    if record['Gloss']=='N' or str(record['Gloss']).startswith('N.'):
+                        # https://universaldependencies.org/cs/feat/NameType.html
+                        f3.write(f"\"{record['Yiddish']}\":\"PROPN.Giv\",\n")
+                f1.write("}\n")
+                f2.write("}\n")
+                f3.write("}\n")
+
+
 def lemmatize (row, basic_form_dict):
    return basic_form_dict.get(row[0], "")
 
@@ -105,7 +140,7 @@ def normalize_texts():
             f.close()
 
 
-def normalize(input, remove_diacritics=False):
+def normalize(input, remove_diacritics=False, normalize_double_quotes=True, normalize_hyphens=True, normalize_apostrophe=True):
     # https://nlp.stanford.edu/IR-book/html/htmledition/accents-and-diacritics-1.html
     # https://en.wikipedia.org/wiki/Hebrew_(Unicode_block)
     # https://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html
@@ -121,14 +156,17 @@ def normalize(input, remove_diacritics=False):
     output = output.replace(chr(0x05f1), "וי")
     output = output.replace(chr(0x05f2), "יי")
     # apostrophe - "' ′ ‘ ’ -> ׳" (chr(39)+" "+chr(0x2032)+" "+chr(0x2018)+" "+chr(0x2019)+" -> "+chr(0x05f3))
-    for c in [39, 0x2032, 0x2018, 0x2019]:
-        output = output.replace(chr(c), chr(0x05f3))
+    if normalize_apostrophe is True:
+        for c in [39, 0x2032, 0x2018, 0x2019]:
+            output = output.replace(chr(c), chr(0x05f3))
     # double quotes : '" “ ” -> ״' (chr(0x22)+" "+chr(0x201c)+" "+chr(0x201d)+" -> "+chr(0x5f4))
-    for c in [0x22, 0x201c, 0x201d]:
-        output = output.replace(chr(c), chr(0x05f4))
+    if normalize_double_quotes is True:
+        for c in [0x22, 0x201c, 0x201d]:
+            output = output.replace(chr(c), chr(0x05f4))
     # top hyphen 0x05be vs 0x2d: אני כותב בעברית - כך וכך, תל-אביב תל־אביב תל־אביב
     # output = re.sub("(\w+)-(\w+)", r"\1־\2", output)
-    output = re.sub(r"(\w+)-(\w+)", rf"\1{chr(0x05be)}\2", output)
+    if normalize_hyphens is True:
+        output = re.sub(r"(\w+)-(\w+)", rf"\1{chr(0x05be)}\2", output)
     # chr(0x05f3)+chr(0x05f3) inside a word -> to chr(0x5f4))
     output = re.sub(rf"(\w+){chr(0x05f3)}{chr(0x05f3)}(\w+)", rf"\1{chr(0x05f4)}\2", output)
     return output
@@ -157,5 +195,6 @@ if __name__ == '__main__':
     # generate_tanach_stats()  # 24,776
     # finkel_stats()
     # add_yiddish_lemmas_to_finkel()
-    normalize_texts()
+    # normalize_texts()
     # generate_stopwords()
+    generate_lookup_files()
