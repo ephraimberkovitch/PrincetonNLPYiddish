@@ -1,4 +1,4 @@
-import pandas as pd
+# import pandas as pd
 import os
 import re
 
@@ -98,22 +98,11 @@ def normalize_texts():
             replace = " "
             file_text = re.sub(find, replace, file_text, 0, re.MULTILINE)
 
-            f = open(folder + "/" + file, "w")
+            file_text = normalize(file_text, remove_diacritics=True)
+
+            f = open("../research/cadet-notebook/new_lang/texts/" + folder + "/" + file, "w")
             f.write(file_text)
             f.close()
-
-            # normalize apostrophe - '׳
-
-            # normalize sentence separators - !?
-
-            # normalize word separators - ,;
-
-            # special characters - hyphen תל-אביב
-
-            # exceptions
-            # [{ORTH: "האָסטו"}, {ORTH: "האָסט", NORM: "דו"}]
-            # regex = r"(.+)סטו", subst = r" \1סט דו"
-            # regex = r"(.+)tsu", subst = r"\1ts du"
 
 
 def normalize(input, remove_diacritics=False):
@@ -168,5 +157,5 @@ if __name__ == '__main__':
     # generate_tanach_stats()  # 24,776
     # finkel_stats()
     # add_yiddish_lemmas_to_finkel()
-    # normalize_texts()
-    generate_stopwords()
+    normalize_texts()
+    # generate_stopwords()
