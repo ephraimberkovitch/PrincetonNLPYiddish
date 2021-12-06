@@ -86,9 +86,9 @@ def generate_lookup_files():
     df = pd.read_csv("../1_lookups_data/wordlist_with_lemmas_norm.csv")
     # df.isnull().sum()
     records = df.to_dict(orient="records")
-    with open("../research/cadet-notebook/new_lang/lookups/yi_lemma_lookup_1.json", "w") as f1:
-        with open("../research/cadet-notebook/new_lang/lookups/yi_upos_lookup_1.json", "w") as f2:
-            with open("../research/cadet-notebook/new_lang/lookups/yi_features_lookup_1.json", "w") as f3:
+    with open("../research/cadet-notebook/new_lang/lookups/yi_lemma_lookup.json", "w") as f1:
+        with open("../research/cadet-notebook/new_lang/lookups/yi_upos_lookup.json", "w") as f2:
+            with open("../research/cadet-notebook/new_lang/lookups/yi_features_lookup.json", "w") as f3:
                 f1.write("{\n")
                 f2.write("{\n")
                 f3.write("{\n")
@@ -96,10 +96,29 @@ def generate_lookup_files():
                     # Base,Romanized,Yiddish,Gloss,Definition,lemma
                     if str(record['lemma']) != 'nan':
                         f1.write(f"\"{record['Yiddish']}\":\"{record['lemma']}\",\n")
-                    f2.write(f"\"{record['Yiddish']}\":\"{record['Gloss']}\",\n")
                     if record['Gloss']=='N' or str(record['Gloss']).startswith('N.'):
                         # https://universaldependencies.org/cs/feat/NameType.html
                         f3.write(f"\"{record['Yiddish']}\":\"PROPN.Giv\",\n")
+                    upos = str(record['Gloss'])
+                    if 'ADJ' in upos:
+                        upos = 'ADJ'
+                    elif 'NOUN' in upos:
+                        upos = 'NOUN'
+                    elif upos=='N' or upos.startswith('N.'):
+                        upos = 'PROPN'
+                    elif upos=='PREP':
+                        upos = 'ADP'
+                    elif upos=='CNJ':
+                        upos = 'CCONJ'
+                    elif 'V.' in upos:
+                        upos = 'VERB'
+                    elif 'ADV' in upos:
+                        upos = 'ADV'
+                    elif 'PART' in upos:
+                        upos = 'PART'
+                    else:
+                        continue
+                    f2.write(f"\"{record['Yiddish']}\":\"{upos}\",\n")
                 f1.write("}\n")
                 f2.write("}\n")
                 f3.write("}\n")
@@ -114,8 +133,8 @@ def normalize_texts():
         'BirobidzhannerShtern',
         'HaifaPrager',
         'SholemAleykhem',
-        'YiddishBranzhe',
-        'YiddishTanakh'
+        'YiddishBranzhe' #,
+        # 'YiddishTanakh'
     ]
 
     for folder in FOLDERS:
@@ -135,7 +154,7 @@ def normalize_texts():
 
             file_text = normalize(file_text, remove_diacritics=True)
 
-            f = open("../research/cadet-notebook/new_lang/texts/" + folder + "/" + file, "w")
+            f = open("../research/cadet-notebook/new_lang/texts/" + folder + "_" + file, "w")
             f.write(file_text)
             f.close()
 

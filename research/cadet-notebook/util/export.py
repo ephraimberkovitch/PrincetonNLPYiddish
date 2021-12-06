@@ -25,6 +25,7 @@ def download(lang_name: str):
     texts = get_texts()
     filenames = get_filenames()
     nlp = get_nlp(lang_name)
+    nlp.max_length = 3000000
     if texts and nlp:
         docs = [doc for doc in list(nlp.pipe(texts))]
 
