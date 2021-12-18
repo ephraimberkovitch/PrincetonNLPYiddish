@@ -8,7 +8,7 @@ reg3 = r"<.*?>" #cleaning up HTML tags
 
 def scrape_forverts():
     global_list = list()
-    for yiddish_page in range(351, 379):
+    for yiddish_page in range(1, 379):
 
         page_content = requests.get(f"https://forward.com/yiddish/?p={yiddish_page}")
         contenttxt = page_content.text
@@ -54,7 +54,7 @@ def scrape_forverts():
                 txt += match.group() + "\n"
         txt = re.sub(reg3, " ", txt, 0, re.MULTILINE)
         if txt.strip()!='':
-            link_html_text = open(f"/Users/rabea/PycharmProjects/Forverts/{500+i}_allPs.txt", "w")
+            link_html_text = open(f"/Users/rabea/PycharmProjects/Forverts/{i}_allPs.txt", "w")
             link_html_text.write(txt)
             link_html_text.close()
 
