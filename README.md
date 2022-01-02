@@ -39,3 +39,8 @@ Contributors names and contact info
 
 ex. Dominique Pizzie  
 ex. [@DomPizzie](https://twitter.com/dompizzie)
+
+## References
+* https://github.com/ibleaman/loshn-koydesh-pronunciation
+* https://github.com/beatrice57/penn-parsed-corpus-of-historical-yiddish
+
