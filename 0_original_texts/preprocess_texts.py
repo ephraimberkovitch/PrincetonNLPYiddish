@@ -129,6 +129,8 @@ def lemmatize (row, basic_form_dict):
 
 
 def normalize_texts():
+    FOLDERS = ['Forverts']
+    """
     FOLDERS = [
         'BirobidzhannerShtern',
         'HaifaPrager',
@@ -136,6 +138,7 @@ def normalize_texts():
         'YiddishBranzhe',
         'YiddishTanakh'
     ]
+    """
 
     for folder in FOLDERS:
         files = os.listdir(folder)

@@ -1,3 +1,4 @@
+import os
 import re
 import requests
 from itertools import chain
@@ -5,6 +6,7 @@ from itertools import chain
 reg1 = r"<a href=\"(.*?)\"(?:.*?)<span class=\"hname\">(.*?)<\/span><\/a>"  # titles + urls
 reg2 = r"<p[^>]*>(.*?)</p>"# all <p>
 reg3 = r"<.*?>" #cleaning up HTML tags
+
 
 def scrape_forverts():
     global_list = list()
@@ -59,5 +61,13 @@ def scrape_forverts():
             link_html_text.close()
 
 
+def clean_forverts_folder():
+    files = os.listdir("Forverts")
+    for file in files:
+        if '_allPs' not in file:
+            os.remove('Forverts/' + file)
 
-scrape_forverts()
+
+if __name__ == '__main__':
+    # scrape_forverts()
+    clean_forverts_folder()
