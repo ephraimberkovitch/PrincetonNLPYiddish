@@ -133,14 +133,16 @@ def normalize_texts():
         'BirobidzhannerShtern',
         'HaifaPrager',
         'SholemAleykhem',
-        'YiddishBranzhe' #,
-        # 'YiddishTanakh'
+        'YiddishBranzhe',
+        'YiddishTanakh'
     ]
 
     for folder in FOLDERS:
         files = os.listdir(folder)
         for file in files:
             if not file.endswith('.txt'):
+                continue
+            if folder == 'YiddishTanakh' and file != 'bible.txt':
                 continue
 
             f = open(folder + "/" + file)
@@ -154,12 +156,12 @@ def normalize_texts():
 
             file_text = normalize(file_text, remove_diacritics=True)
 
-            f = open("../research/cadet-notebook/new_lang/texts/" + folder + "_" + file, "w")
+            f = open("normalized/" + folder + "_" + file, "w")
             f.write(file_text)
             f.close()
 
 
-def normalize(input, remove_diacritics=False, normalize_double_quotes=True, normalize_hyphens=True, normalize_apostrophe=True):
+def normalize(input, remove_diacritics=False, normalize_final_characters=False, tokenization_exceptions=False, normalize_double_quotes=True, normalize_hyphens=True, normalize_apostrophe=True):
     # https://nlp.stanford.edu/IR-book/html/htmledition/accents-and-diacritics-1.html
     # https://en.wikipedia.org/wiki/Hebrew_(Unicode_block)
     # https://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html
@@ -188,6 +190,25 @@ def normalize(input, remove_diacritics=False, normalize_double_quotes=True, norm
         output = re.sub(r"(\w+)-(\w+)", rf"\1{chr(0x05be)}\2", output)
     # chr(0x05f3)+chr(0x05f3) inside a word -> to chr(0x5f4))
     output = re.sub(rf"(\w+){chr(0x05f3)}{chr(0x05f3)}(\w+)", rf"\1{chr(0x05f4)}\2", output)
+
+    output = re.sub(r"(\w+)!(\w+)", rf"\1! \2", output)
+    output = re.sub(r"(\w+)\?(\w+)", rf"\1\? \2", output)
+    output = re.sub(r"(\w+)\.(\w+)", rf"\1\. \2", output)
+    output = re.sub(r"(\w+);(\w+)", rf"\1; \2", output)
+
+    if normalize_final_characters is True:
+        output = output.replace('ם', 'מ')
+        output = output.replace('ך', 'כ')
+        output = output.replace('ץ', 'צ')
+        output = output.replace('ף', 'פ')
+        output = output.replace('ן', 'נ')
+
+    if tokenization_exceptions is True:
+        output = re.sub(r"\s?כ׳(\w+)", "כ׳ "+r"\1", output)
+        output = re.sub(r"\s?ר׳(\w+)", "ר׳ "+r"\1", output)
+        output = re.sub(r"\s?מ׳(\w+)", "מ׳ "+r"\1", output)
+        output = re.sub(r"\s?ס׳(\w+)", "ס׳ "+r"\1", output)
+
     return output
 
 
@@ -214,6 +235,6 @@ if __name__ == '__main__':
     # generate_tanach_stats()  # 24,776
     # finkel_stats()
     # add_yiddish_lemmas_to_finkel()
-    # normalize_texts()
+    normalize_texts()
     # generate_stopwords()
-    generate_lookup_files()
+    # generate_lookup_files()
