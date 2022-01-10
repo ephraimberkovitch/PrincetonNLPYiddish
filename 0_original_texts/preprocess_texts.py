@@ -229,6 +229,7 @@ def generate_stopwords():
             text = f.read()
         words = text.split()
         for word in words:
+            word = clean_word(word)
             if word is None or word.strip() == '':
                 continue
             if word not in words_frequency_table:
@@ -239,6 +240,15 @@ def generate_stopwords():
     with open('../1_lookups_data/stopwords.tsv', 'w') as f:
         for word in sorted(words_frequency_table, key=words_frequency_table.get, reverse=True):
             f.write(f"{word}\t{words_frequency_table[word]}\n")
+
+
+def clean_word(w):
+    chars = []
+    for char in w:
+        if char in [' ', '!', '?', ',', ';', '״', '(', ')', '.', '„', '‟', ':', '…', ':']:
+            continue
+        chars.append(char)
+    return ''.join(chars)
 
 
 if __name__ == '__main__':
