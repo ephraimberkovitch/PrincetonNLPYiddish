@@ -221,18 +221,21 @@ def normalize(input, remove_diacritics=False, normalize_final_characters=False, 
 
 
 def generate_stopwords():
-    with open("YiddishTanakh/_all_cleaned.txt") as f:
-        tanakh_text = f.read()
-    norm_tanakh_text = normalize(tanakh_text, remove_diacritics=True)
     words_frequency_table = dict()
-    words = norm_tanakh_text.split()
-    for word in words:
-        if word is None or word.strip() == '':
-            continue
-        if word not in words_frequency_table:
-            words_frequency_table[word] = 1
-        else:
-            words_frequency_table[word] += 1
+
+    files = os.listdir('normalized')
+    for file in files:
+        with open('normalized/' + file) as f:
+            text = f.read()
+        words = text.split()
+        for word in words:
+            if word is None or word.strip() == '':
+                continue
+            if word not in words_frequency_table:
+                words_frequency_table[word] = 1
+            else:
+                words_frequency_table[word] += 1
+
     with open('../1_lookups_data/stopwords.tsv', 'w') as f:
         for word in sorted(words_frequency_table, key=words_frequency_table.get, reverse=True):
             f.write(f"{word}\t{words_frequency_table[word]}\n")
@@ -243,6 +246,6 @@ if __name__ == '__main__':
     # generate_tanach_stats()  # 24,776
     # finkel_stats()
     # add_yiddish_lemmas_to_finkel()
-    normalize_texts()
-    # generate_stopwords()
+    # normalize_texts()
+    generate_stopwords()
     # generate_lookup_files()
