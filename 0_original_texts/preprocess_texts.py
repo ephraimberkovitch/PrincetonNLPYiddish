@@ -129,10 +129,11 @@ def lemmatize (row, basic_form_dict):
 
 
 def normalize_texts():
-    FOLDERS = ['Forverts']
+    FOLDERS = ['SholemAleykhem']
     """
     FOLDERS = [
         'BirobidzhannerShtern',
+        'Forverts',
         'HaifaPrager',
         'SholemAleykhem',
         'YiddishBranzhe',
@@ -169,6 +170,10 @@ def normalize(input, remove_diacritics=False, normalize_final_characters=False, 
     # https://en.wikipedia.org/wiki/Hebrew_(Unicode_block)
     # https://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html
     output = input
+    # strip html tags
+    regex = r"<(?:\\?).*?>"
+    output = re.sub(regex, " ", output, 0, re.MULTILINE)
+
     # diacritics - chr(0x0591) - chr(0x05c7), except of chr(0x05be); ײַ שרײַבן
     if remove_diacritics is True:
         for c in range(1425, 1480):

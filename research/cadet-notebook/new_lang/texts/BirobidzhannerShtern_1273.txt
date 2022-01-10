@@ -10,7 +10,7 @@
  *אין אידישן טעאטער. – דער בריוו איז געשריבן נאך די פרעמיערעס פון ״סטעמפעניו״ און ״שמואל פאסטערנאק״. 
  &nbsp; 
  דאס שלום־עליכם בוך. פארלאג איקוף, ניו־יארק. 
- https://archive.org/details/nybc214416/page/n2 
+ https://archive\. org/details/nybc214416/page/n2 
  
  
  צו די קינדער 
@@ -21,7 +21,7 @@
  שבת וועלן מיר זיין ביי בערקאוויטשעס משפחה אין ברוקלין. איך לאז־איבער אן ארט פאר דער מאמע און נעם אייך ארום און קוש. 
  פא. 
  דאס שלום־עליכם בוך. פארלאג איקוף, ניו־יארק. 
- https://archive.org/details/nybc214416/page/n2 
+ https://archive\. org/details/nybc214416/page/n2 
  
  
  
@@ -100,5 +100,5 @@
  1888, די יידישע פאלקסביבליאטעק, שלום־עליכם, ערשטער בוך. 
  
  
- document.createElement(׳audio׳); 
- Аудиоплеер http://www.gazetaeao.ru/resurs/uploads/2019/03/Ikh־Vill-Nit־Gehn-In־Cheder-Ludwig־Zats.mp3 
+ document\. createElement(׳audio׳); 
+ Аудиоплеер http://www\. gazetaeao.ru/resurs/uploads/2019/03/Ikh־Vill-Nit־Gehn-In־Cheder-Ludwig־Zats\. mp3 
