@@ -1,0 +1,1179 @@
+{
+  "name" : "Yiddish",
+  "description" : null,
+  "mode" : "ANNOTATION",
+  "version" : 1,
+  "source_documents" : [ {
+    "name" : "Avtobiografie_output8.tsv",
+    "format" : "conllu",
+    "state" : "CURATION_IN_PROGRESS",
+    "timestamp" : 1641564356000,
+    "created" : 1636881220000,
+    "updated" : 1641564356000
+  }, {
+    "name" : "Biro1000-1050MoreThan100.tsv",
+    "format" : "textlines",
+    "state" : "ANNOTATION_IN_PROGRESS",
+    "timestamp" : null,
+    "created" : 1641653237000,
+    "updated" : 1641653389000
+  }, {
+    "name" : "HaifaPrager_2022-12-10 (2).tsv",
+    "format" : "text",
+    "state" : "ANNOTATION_IN_PROGRESS",
+    "timestamp" : null,
+    "created" : 1640336235000,
+    "updated" : 1640336263000
+  }, {
+    "name" : "HaifaPrager_2022-12-10.tsv",
+    "format" : "text",
+    "state" : "ANNOTATION_IN_PROGRESS",
+    "timestamp" : null,
+    "created" : 1640113286000,
+    "updated" : 1640113350000
+  }, {
+    "name" : "branzhe778.tsv",
+    "format" : "textlines",
+    "state" : "CURATION_IN_PROGRESS",
+    "timestamp" : 1641557907000,
+    "created" : 1635833142000,
+    "updated" : 1641557907000
+  }, {
+    "name" : "neviim2OR2cadet-xml (1).tsv",
+    "format" : "text",
+    "state" : "ANNOTATION_IN_PROGRESS",
+    "timestamp" : null,
+    "created" : 1640809906000,
+    "updated" : 1640809931000
+  } ],
+  "annotation_documents" : [ {
+    "name" : "branzhe778.tsv",
+    "user" : "sinai.rusinek",
+    "state" : "IN_PROGRESS",
+    "timestamp" : 1640462006000,
+    "sentence_accessed" : 0,
+    "created" : 1635833227000,
+    "updated" : 1641557850000
+  }, {
+    "name" : "branzhe778.tsv",
+    "user" : "RachelCressell",
+    "state" : "FINISHED",
+    "timestamp" : 1637119072000,
+    "sentence_accessed" : 0,
+    "created" : 1635950539000,
+    "updated" : 1641557558000
+  }, {
+    "name" : "branzhe778.tsv",
+    "user" : "OksanaShcherba",
+    "state" : "FINISHED",
+    "timestamp" : 1636632766000,
+    "sentence_accessed" : 0,
+    "created" : 1635951721000,
+    "updated" : 1637440566000
+  }, {
+    "name" : "Avtobiografie_output8.tsv",
+    "user" : "sinai.rusinek",
+    "state" : "IN_PROGRESS",
+    "timestamp" : 1639149960000,
+    "sentence_accessed" : 0,
+    "created" : 1636882017000,
+    "updated" : 1641557848000
+  }, {
+    "name" : "Avtobiografie_output8.tsv",
+    "user" : "OksanaShcherba",
+    "state" : "FINISHED",
+    "timestamp" : 1637759718000,
+    "sentence_accessed" : 0,
+    "created" : 1637066083000,
+    "updated" : 1639150160000
+  }, {
+    "name" : "Avtobiografie_output8.tsv",
+    "user" : "RachelCressell",
+    "state" : "FINISHED",
+    "timestamp" : 1637606284000,
+    "sentence_accessed" : 0,
+    "created" : 1637440441000,
+    "updated" : 1641557556000
+  }, {
+    "name" : "branzhe778.tsv",
+    "user" : "ephraim.berkovitch",
+    "state" : "IN_PROGRESS",
+    "timestamp" : null,
+    "sentence_accessed" : 0,
+    "created" : 1638800817000,
+    "updated" : 1638800817000
+  }, {
+    "name" : "Avtobiografie_output8.tsv",
+    "user" : "ephraim.berkovitch",
+    "state" : "IN_PROGRESS",
+    "timestamp" : null,
+    "sentence_accessed" : 0,
+    "created" : 1638801189000,
+    "updated" : 1638801189000
+  }, {
+    "name" : "HaifaPrager_2022-12-10.tsv",
+    "user" : "sinai.rusinek",
+    "state" : "IN_PROGRESS",
+    "timestamp" : 1640335529000,
+    "sentence_accessed" : 0,
+    "created" : 1640113325000,
+    "updated" : 1640335529000
+  }, {
+    "name" : "HaifaPrager_2022-12-10 (2).tsv",
+    "user" : "sinai.rusinek",
+    "state" : "IN_PROGRESS",
+    "timestamp" : 1640640541000,
+    "sentence_accessed" : 0,
+    "created" : 1640336262000,
+    "updated" : 1640640541000
+  }, {
+    "name" : "neviim2OR2cadet-xml (1).tsv",
+    "user" : "sinai.rusinek",
+    "state" : "IN_PROGRESS",
+    "timestamp" : 1640885051000,
+    "sentence_accessed" : 0,
+    "created" : 1640809931000,
+    "updated" : 1640885051000
+  }, {
+    "name" : "Biro1000-1050MoreThan100.tsv",
+    "user" : "sinai.rusinek",
+    "state" : "IN_PROGRESS",
+    "timestamp" : 1641750915000,
+    "sentence_accessed" : 0,
+    "created" : 1641653389000,
+    "updated" : 1641750915000
+  } ],
+  "project_permissions" : [ {
+    "level" : "USER",
+    "user" : "OksanaShcherba"
+  }, {
+    "level" : "USER",
+    "user" : "RachelCressell"
+  }, {
+    "level" : "USER",
+    "user" : "TetianaShyshkina"
+  }, {
+    "level" : "USER",
+    "user" : "ajanco"
+  }, {
+    "level" : "USER",
+    "user" : "ephraim.berkovitch"
+  }, {
+    "level" : "USER",
+    "user" : "qad"
+  }, {
+    "level" : "ADMIN",
+    "user" : "sinai.rusinek"
+  }, {
+    "level" : "CURATOR",
+    "user" : "sinai.rusinek"
+  }, {
+    "level" : "USER",
+    "user" : "sinai.rusinek"
+  }, {
+    "level" : "USER",
+    "user" : "ttasovac"
+  } ],
+  "tag_sets" : [ {
+    "name" : "Coreference mentions",
+    "description" : "coreference type annotation",
+    "language" : "de",
+    "tags" : [ {
+      "tag_name" : "nam",
+      "tag_description" : "nam"
+    } ],
+    "create_tag" : false
+  }, {
+    "name" : "Coreference relations",
+    "description" : "coreference relation annotation",
+    "language" : "de",
+    "tags" : [ {
+      "tag_name" : "anaphoric",
+      "tag_description" : "anaphoric"
+    } ],
+    "create_tag" : false
+  }, {
+    "name" : "Dependency flavors",
+    "description" : "Dependency flavors",
+    "language" : "mul",
+    "tags" : [ {
+      "tag_name" : "basic",
+      "tag_description" : "basic"
+    }, {
+      "tag_name" : "enhanced",
+      "tag_description" : "enhanced"
+    } ],
+    "create_tag" : true
+  }, {
+    "name" : "Named Entity tags",
+    "description" : "Named Entity annotation",
+    "language" : "de",
+    "tags" : [ {
+      "tag_name" : "LOC",
+      "tag_description" : "Location"
+    }, {
+      "tag_name" : "LOCderiv",
+      "tag_description" : "Location derivative"
+    }, {
+      "tag_name" : "LOCpart",
+      "tag_description" : "Hyphenated part is location"
+    }, {
+      "tag_name" : "ORG",
+      "tag_description" : "Organization"
+    }, {
+      "tag_name" : "ORGderiv",
+      "tag_description" : "Organization derivative"
+    }, {
+      "tag_name" : "ORGpart",
+      "tag_description" : "Hyphenated part is organization"
+    }, {
+      "tag_name" : "OTH",
+      "tag_description" : "Other: Every name that is not a location, person or organisation"
+    }, {
+      "tag_name" : "OTHderiv",
+      "tag_description" : "Other derivative"
+    }, {
+      "tag_name" : "OTHpart",
+      "tag_description" : "Hyphenated part is Other"
+    }, {
+      "tag_name" : "PER",
+      "tag_description" : "Person"
+    }, {
+      "tag_name" : "PERderiv",
+      "tag_description" : "Person derivative"
+    }, {
+      "tag_name" : "PERpart",
+      "tag_description" : "Hyphenated part is person"
+    } ],
+    "create_tag" : false
+  }, {
+    "name" : "Operation",
+    "description" : "operation to be done with specified in tokenIDs token/tokens in order to correct",
+    "language" : "en",
+    "tags" : [ {
+      "tag_name" : "delete",
+      "tag_description" : "delete"
+    }, {
+      "tag_name" : "insert_after",
+      "tag_description" : "insert after"
+    }, {
+      "tag_name" : "insert_before",
+      "tag_description" : "insert before"
+    }, {
+      "tag_name" : "replace",
+      "tag_description" : "replace"
+    } ],
+    "create_tag" : true
+  }, {
+    "name" : "UD Universal Dependencies (v2)",
+    "description" : "The idea of universal dependencies is to propose a set of universal grammatical relations which can be used with relative fidelity to capture any dependency relation between words in any language. Each dependency relation should be typed with one of the relations in the table below.\r\n\r\nThe following table lists the 37 universal syntactic relations used in UD v2. It is a revised version of the relations originally described in Universal Stanford Dependencies: A cross-linguistic typology (de Marneffe et al. 2014).\r\n\r\n© 2014-2017 Universal Dependencies contributors.\r\n\r\nSee also: https://universaldependencies.org/u/dep/index.html",
+    "language" : "mul",
+    "tags" : [ {
+      "tag_name" : "acl",
+      "tag_description" : "clausal modifier of noun (adjectival clause)"
+    }, {
+      "tag_name" : "advcl",
+      "tag_description" : "adverbial clause modifier"
+    }, {
+      "tag_name" : "advmod",
+      "tag_description" : "adverbial modifier"
+    }, {
+      "tag_name" : "amod",
+      "tag_description" : "adjectival modifier"
+    }, {
+      "tag_name" : "appos",
+      "tag_description" : "appositional modifier"
+    }, {
+      "tag_name" : "aux",
+      "tag_description" : "auxiliary"
+    }, {
+      "tag_name" : "case",
+      "tag_description" : "case marking"
+    }, {
+      "tag_name" : "cc",
+      "tag_description" : "coordinating conjunction"
+    }, {
+      "tag_name" : "ccomp",
+      "tag_description" : "clausal complement"
+    }, {
+      "tag_name" : "clf",
+      "tag_description" : "classifier"
+    }, {
+      "tag_name" : "compound",
+      "tag_description" : "compound"
+    }, {
+      "tag_name" : "conj",
+      "tag_description" : "conjunct"
+    }, {
+      "tag_name" : "cop",
+      "tag_description" : "copula"
+    }, {
+      "tag_name" : "csubj",
+      "tag_description" : "clausal subject"
+    }, {
+      "tag_name" : "dep",
+      "tag_description" : "unspecified dependency"
+    }, {
+      "tag_name" : "det",
+      "tag_description" : "determiner"
+    }, {
+      "tag_name" : "discourse",
+      "tag_description" : "discourse element"
+    }, {
+      "tag_name" : "dislocated",
+      "tag_description" : "dislocated elements"
+    }, {
+      "tag_name" : "expl",
+      "tag_description" : "expletive"
+    }, {
+      "tag_name" : "fixed",
+      "tag_description" : "fixed multiword expression"
+    }, {
+      "tag_name" : "flat",
+      "tag_description" : "flat multiword expression"
+    }, {
+      "tag_name" : "goeswith",
+      "tag_description" : "goes with"
+    }, {
+      "tag_name" : "iobj",
+      "tag_description" : "indirect object"
+    }, {
+      "tag_name" : "list",
+      "tag_description" : "list"
+    }, {
+      "tag_name" : "mark",
+      "tag_description" : "marker"
+    }, {
+      "tag_name" : "nmod",
+      "tag_description" : "nominal modifier"
+    }, {
+      "tag_name" : "nsubj",
+      "tag_description" : "nominal subject"
+    }, {
+      "tag_name" : "nummod",
+      "tag_description" : "numeric modifier"
+    }, {
+      "tag_name" : "obj",
+      "tag_description" : "object"
+    }, {
+      "tag_name" : "obl",
+      "tag_description" : "oblique nominal"
+    }, {
+      "tag_name" : "orphan",
+      "tag_description" : "orphan"
+    }, {
+      "tag_name" : "parataxis",
+      "tag_description" : "parataxis"
+    }, {
+      "tag_name" : "punct",
+      "tag_description" : "punctuation"
+    }, {
+      "tag_name" : "reparandum",
+      "tag_description" : "overridden disfluency"
+    }, {
+      "tag_name" : "root",
+      "tag_description" : "root"
+    }, {
+      "tag_name" : "vocative",
+      "tag_description" : "vocative"
+    }, {
+      "tag_name" : "xcomp",
+      "tag_description" : "open clausal complement"
+    } ],
+    "create_tag" : false
+  }, {
+    "name" : "UD Universal POS tags (v2)",
+    "description" : "These tags mark the core part-of-speech categories from the Universal Dependencies project. To distinguish additional lexical and grammatical properties of words, use the universal features.\r\n\r\n© 2017 Universal Dependencies contributors\r\n\r\nSee: https://universaldependencies.org/u/pos/index.html",
+    "language" : "mul",
+    "tags" : [ {
+      "tag_name" : "ADJ",
+      "tag_description" : "adjective"
+    }, {
+      "tag_name" : "ADP",
+      "tag_description" : "adposition"
+    }, {
+      "tag_name" : "ADV",
+      "tag_description" : "adverb"
+    }, {
+      "tag_name" : "AUX",
+      "tag_description" : "auxiliary"
+    }, {
+      "tag_name" : "CCONJ",
+      "tag_description" : "coordinating conjunction"
+    }, {
+      "tag_name" : "DET",
+      "tag_description" : "determiner"
+    }, {
+      "tag_name" : "INTJ",
+      "tag_description" : "interjection"
+    }, {
+      "tag_name" : "NOUN",
+      "tag_description" : "noun"
+    }, {
+      "tag_name" : "NUM",
+      "tag_description" : "numeral"
+    }, {
+      "tag_name" : "PART",
+      "tag_description" : "particle"
+    }, {
+      "tag_name" : "PRON",
+      "tag_description" : "pronoun"
+    }, {
+      "tag_name" : "PROPN",
+      "tag_description" : "proper noun"
+    }, {
+      "tag_name" : "PUNCT",
+      "tag_description" : "punctuation"
+    }, {
+      "tag_name" : "SCONJ",
+      "tag_description" : "subordinating conjunction"
+    }, {
+      "tag_name" : "SYM",
+      "tag_description" : "symbol"
+    }, {
+      "tag_name" : "VERB",
+      "tag_description" : "verb"
+    }, {
+      "tag_name" : "X",
+      "tag_description" : "other"
+    } ],
+    "create_tag" : false
+  } ],
+  "layers" : [ {
+    "name" : "de.tudarmstadt.ukp.dkpro.core.api.syntax.type.chunk.Chunk",
+    "features" : [ {
+      "name" : "chunkValue",
+      "tag_set" : null,
+      "uiName" : "Tag",
+      "type" : "uima.cas.String",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "Chunk tag",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    } ],
+    "uiName" : "Chunk",
+    "type" : "span",
+    "description" : null,
+    "enabled" : true,
+    "built_in" : true,
+    "readonly" : false,
+    "attach_type" : null,
+    "attach_feature" : null,
+    "allow_stacking" : false,
+    "cross_sentence" : false,
+    "show_hover" : true,
+    "anchoring_mode" : "TOKENS",
+    "overlap_mode" : "NO_OVERLAP",
+    "validation_mode" : "ALWAYS",
+    "lock_to_token_offset" : false,
+    "multiple_tokens" : true,
+    "project_name" : "Yiddish",
+    "linked_list_behavior" : false,
+    "on_click_javascript_action" : null,
+    "traits" : null
+  }, {
+    "name" : "de.tudarmstadt.ukp.dkpro.core.api.coref.type.Coreference",
+    "features" : [ {
+      "name" : "referenceRelation",
+      "tag_set" : {
+        "name" : "Coreference relations",
+        "description" : null,
+        "language" : null,
+        "tags" : [ ],
+        "create_tag" : false
+      },
+      "uiName" : "referenceRelation",
+      "type" : "uima.cas.String",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "Coreference relation",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    }, {
+      "name" : "referenceType",
+      "tag_set" : {
+        "name" : "Coreference mentions",
+        "description" : null,
+        "language" : null,
+        "tags" : [ ],
+        "create_tag" : false
+      },
+      "uiName" : "referenceType",
+      "type" : "uima.cas.String",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "Coreference type",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    } ],
+    "uiName" : "Coreference",
+    "type" : "chain",
+    "description" : null,
+    "enabled" : true,
+    "built_in" : true,
+    "readonly" : false,
+    "attach_type" : null,
+    "attach_feature" : null,
+    "allow_stacking" : true,
+    "cross_sentence" : true,
+    "show_hover" : true,
+    "anchoring_mode" : "TOKENS",
+    "overlap_mode" : "ANY_OVERLAP",
+    "validation_mode" : "ALWAYS",
+    "lock_to_token_offset" : false,
+    "multiple_tokens" : true,
+    "project_name" : "Yiddish",
+    "linked_list_behavior" : false,
+    "on_click_javascript_action" : null,
+    "traits" : null
+  }, {
+    "name" : "de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency",
+    "features" : [ {
+      "name" : "flavor",
+      "tag_set" : {
+        "name" : "Dependency flavors",
+        "description" : null,
+        "language" : null,
+        "tags" : [ ],
+        "create_tag" : false
+      },
+      "uiName" : "Flavor",
+      "type" : "uima.cas.String",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "Dependency relation",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    }, {
+      "name" : "DependencyType",
+      "tag_set" : {
+        "name" : "UD Universal Dependencies (v2)",
+        "description" : null,
+        "language" : null,
+        "tags" : [ ],
+        "create_tag" : false
+      },
+      "uiName" : "Relation",
+      "type" : "uima.cas.String",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "Dependency relation",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    } ],
+    "uiName" : "Dependency",
+    "type" : "relation",
+    "description" : null,
+    "enabled" : true,
+    "built_in" : true,
+    "readonly" : false,
+    "attach_type" : {
+      "name" : "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token"
+    },
+    "attach_feature" : {
+      "name" : "pos",
+      "layer" : "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token"
+    },
+    "allow_stacking" : false,
+    "cross_sentence" : false,
+    "show_hover" : true,
+    "anchoring_mode" : "SINGLE_TOKEN",
+    "overlap_mode" : "OVERLAP_ONLY",
+    "validation_mode" : "ALWAYS",
+    "lock_to_token_offset" : true,
+    "multiple_tokens" : false,
+    "project_name" : "Yiddish",
+    "linked_list_behavior" : false,
+    "on_click_javascript_action" : null,
+    "traits" : null
+  }, {
+    "name" : "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma",
+    "features" : [ {
+      "name" : "value",
+      "tag_set" : null,
+      "uiName" : "Lemma",
+      "type" : "uima.cas.String",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "lemma Annotation",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    } ],
+    "uiName" : "Lemma",
+    "type" : "span",
+    "description" : null,
+    "enabled" : true,
+    "built_in" : true,
+    "readonly" : false,
+    "attach_type" : {
+      "name" : "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token"
+    },
+    "attach_feature" : {
+      "name" : "lemma",
+      "layer" : "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token"
+    },
+    "allow_stacking" : false,
+    "cross_sentence" : false,
+    "show_hover" : true,
+    "anchoring_mode" : "SINGLE_TOKEN",
+    "overlap_mode" : "NO_OVERLAP",
+    "validation_mode" : "ALWAYS",
+    "lock_to_token_offset" : true,
+    "multiple_tokens" : false,
+    "project_name" : "Yiddish",
+    "linked_list_behavior" : false,
+    "on_click_javascript_action" : null,
+    "traits" : null
+  }, {
+    "name" : "de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.morph.MorphologicalFeatures",
+    "features" : [ {
+      "name" : "value",
+      "tag_set" : null,
+      "uiName" : "Features",
+      "type" : "uima.cas.String",
+      "enabled" : true,
+      "visible" : false,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "Morphological features",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    } ],
+    "uiName" : "Morphological features",
+    "type" : "span",
+    "description" : null,
+    "enabled" : true,
+    "built_in" : true,
+    "readonly" : false,
+    "attach_type" : {
+      "name" : "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token"
+    },
+    "attach_feature" : {
+      "name" : "morph",
+      "layer" : "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token"
+    },
+    "allow_stacking" : false,
+    "cross_sentence" : false,
+    "show_hover" : true,
+    "anchoring_mode" : "SINGLE_TOKEN",
+    "overlap_mode" : "NO_OVERLAP",
+    "validation_mode" : "ALWAYS",
+    "lock_to_token_offset" : true,
+    "multiple_tokens" : false,
+    "project_name" : "Yiddish",
+    "linked_list_behavior" : false,
+    "on_click_javascript_action" : null,
+    "traits" : null
+  }, {
+    "name" : "de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity",
+    "features" : [ {
+      "name" : "identifier",
+      "tag_set" : null,
+      "uiName" : "identifier",
+      "type" : "kb:<ANY>",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "Linked entity",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    }, {
+      "name" : "value",
+      "tag_set" : {
+        "name" : "Named Entity tags",
+        "description" : null,
+        "language" : null,
+        "tags" : [ ],
+        "create_tag" : false
+      },
+      "uiName" : "value",
+      "type" : "uima.cas.String",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "Named entity type",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : "{\"multipleRows\":false,\"dynamicSize\":false,\"collapsedRows\":1,\"expandedRows\":1,\"keyBindings\":[{\"keyCombo\":\"l\",\"value\":\"LOC\"},{\"keyCombo\":\"p\",\"value\":\"PER\"}]}"
+    } ],
+    "uiName" : "Named entity",
+    "type" : "span",
+    "description" : null,
+    "enabled" : true,
+    "built_in" : true,
+    "readonly" : false,
+    "attach_type" : null,
+    "attach_feature" : null,
+    "allow_stacking" : false,
+    "cross_sentence" : false,
+    "show_hover" : true,
+    "anchoring_mode" : "TOKENS",
+    "overlap_mode" : "NO_OVERLAP",
+    "validation_mode" : "ALWAYS",
+    "lock_to_token_offset" : false,
+    "multiple_tokens" : true,
+    "project_name" : "Yiddish",
+    "linked_list_behavior" : false,
+    "on_click_javascript_action" : null,
+    "traits" : "{\"coloringRules\":{\"rules\":[{\"color\":\"#38d72e\",\"pattern\":\"LOC\"},{\"color\":\"#7b1f1f\",\"pattern\":\"per\"}]}}"
+  }, {
+    "name" : "de.tudarmstadt.ukp.dkpro.core.api.transform.type.SofaChangeAnnotation",
+    "features" : [ {
+      "name" : "value",
+      "tag_set" : null,
+      "uiName" : "Correction",
+      "type" : "uima.cas.String",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "Correct this token using the specified operation.",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    }, {
+      "name" : "operation",
+      "tag_set" : {
+        "name" : "Operation",
+        "description" : null,
+        "language" : null,
+        "tags" : [ ],
+        "create_tag" : false
+      },
+      "uiName" : "Operation",
+      "type" : "uima.cas.String",
+      "enabled" : true,
+      "visible" : false,
+      "include_in_hover" : false,
+      "required" : true,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "An operation taken to change this token.",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    } ],
+    "uiName" : "Orthography Correction",
+    "type" : "span",
+    "description" : null,
+    "enabled" : true,
+    "built_in" : true,
+    "readonly" : false,
+    "attach_type" : null,
+    "attach_feature" : null,
+    "allow_stacking" : false,
+    "cross_sentence" : false,
+    "show_hover" : true,
+    "anchoring_mode" : "SINGLE_TOKEN",
+    "overlap_mode" : "NO_OVERLAP",
+    "validation_mode" : "ALWAYS",
+    "lock_to_token_offset" : true,
+    "multiple_tokens" : false,
+    "project_name" : "Yiddish",
+    "linked_list_behavior" : false,
+    "on_click_javascript_action" : null,
+    "traits" : null
+  }, {
+    "name" : "de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS",
+    "features" : [ {
+      "name" : "coarseValue",
+      "tag_set" : {
+        "name" : "UD Universal POS tags (v2)",
+        "description" : null,
+        "language" : null,
+        "tags" : [ ],
+        "create_tag" : false
+      },
+      "uiName" : "UPOS",
+      "type" : "uima.cas.String",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "Universal part-of-speech tag",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : "{\"multipleRows\":false,\"dynamicSize\":false,\"collapsedRows\":1,\"expandedRows\":1,\"keyBindings\":[{\"keyCombo\":\"j\",\"value\":\"ADJ\"},{\"keyCombo\":\"p\",\"value\":\"ADP\"},{\"keyCombo\":\"x\",\"value\":\"AUX\"},{\"keyCombo\":\"v\",\"value\":\"VERB\"},{\"keyCombo\":\"c\",\"value\":\"CCONJ\"},{\"keyCombo\":\"d\",\"value\":\"DET\"},{\"keyCombo\":\"i\",\"value\":\"INTJ\"},{\"keyCombo\":\"n\",\"value\":\"NOUN\"},{\"keyCombo\":\"r\",\"value\":\"PRON\"},{\"keyCombo\":\"t\",\"value\":\"PUNCT\"}]}"
+    }, {
+      "name" : "PosValue",
+      "tag_set" : null,
+      "uiName" : "XPOS",
+      "type" : "uima.cas.String",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "Language-specific part-of-speech tag",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    } ],
+    "uiName" : "Part of speech",
+    "type" : "span",
+    "description" : null,
+    "enabled" : true,
+    "built_in" : true,
+    "readonly" : false,
+    "attach_type" : {
+      "name" : "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token"
+    },
+    "attach_feature" : {
+      "name" : "pos",
+      "layer" : "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token"
+    },
+    "allow_stacking" : false,
+    "cross_sentence" : false,
+    "show_hover" : true,
+    "anchoring_mode" : "SINGLE_TOKEN",
+    "overlap_mode" : "NO_OVERLAP",
+    "validation_mode" : "ALWAYS",
+    "lock_to_token_offset" : true,
+    "multiple_tokens" : false,
+    "project_name" : "Yiddish",
+    "linked_list_behavior" : false,
+    "on_click_javascript_action" : null,
+    "traits" : null
+  }, {
+    "name" : "de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemArg",
+    "features" : [ ],
+    "uiName" : "SemArg",
+    "type" : "span",
+    "description" : null,
+    "enabled" : true,
+    "built_in" : true,
+    "readonly" : false,
+    "attach_type" : null,
+    "attach_feature" : null,
+    "allow_stacking" : true,
+    "cross_sentence" : false,
+    "show_hover" : true,
+    "anchoring_mode" : "TOKENS",
+    "overlap_mode" : "ANY_OVERLAP",
+    "validation_mode" : "ALWAYS",
+    "lock_to_token_offset" : false,
+    "multiple_tokens" : true,
+    "project_name" : "Yiddish",
+    "linked_list_behavior" : false,
+    "on_click_javascript_action" : null,
+    "traits" : null
+  }, {
+    "name" : "de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemPred",
+    "features" : [ {
+      "name" : "arguments",
+      "tag_set" : null,
+      "uiName" : "arguments",
+      "type" : "de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemArg",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "Arguments of the semantic predicate",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "ARRAY",
+      "link_mode" : "WITH_ROLE",
+      "link_type_name" : "de.tudarmstadt.ukp.dkpro.core.api.semantics.type.SemArgLink",
+      "link_type_role_feature_name" : "role",
+      "link_type_target_feature_name" : "target",
+      "traits" : null
+    }, {
+      "name" : "category",
+      "tag_set" : null,
+      "uiName" : "category",
+      "type" : "uima.cas.String",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "Category of the semantic predicate, e.g. the frame identifier.",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    } ],
+    "uiName" : "SemPred",
+    "type" : "span",
+    "description" : null,
+    "enabled" : true,
+    "built_in" : true,
+    "readonly" : false,
+    "attach_type" : null,
+    "attach_feature" : null,
+    "allow_stacking" : true,
+    "cross_sentence" : false,
+    "show_hover" : true,
+    "anchoring_mode" : "TOKENS",
+    "overlap_mode" : "ANY_OVERLAP",
+    "validation_mode" : "ALWAYS",
+    "lock_to_token_offset" : false,
+    "multiple_tokens" : true,
+    "project_name" : "Yiddish",
+    "linked_list_behavior" : false,
+    "on_click_javascript_action" : null,
+    "traits" : null
+  }, {
+    "name" : "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.SurfaceForm",
+    "features" : [ {
+      "name" : "value",
+      "tag_set" : null,
+      "uiName" : "Form",
+      "type" : "uima.cas.String",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : "Original surface text",
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    } ],
+    "uiName" : "Surface form",
+    "type" : "span",
+    "description" : null,
+    "enabled" : true,
+    "built_in" : true,
+    "readonly" : false,
+    "attach_type" : null,
+    "attach_feature" : null,
+    "allow_stacking" : false,
+    "cross_sentence" : false,
+    "show_hover" : true,
+    "anchoring_mode" : "TOKENS",
+    "overlap_mode" : "NO_OVERLAP",
+    "validation_mode" : "ALWAYS",
+    "lock_to_token_offset" : false,
+    "multiple_tokens" : true,
+    "project_name" : "Yiddish",
+    "linked_list_behavior" : false,
+    "on_click_javascript_action" : null,
+    "traits" : null
+  }, {
+    "name" : "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token",
+    "features" : [ {
+      "name" : "lemma",
+      "tag_set" : null,
+      "uiName" : "lemma",
+      "type" : "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : null,
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    }, {
+      "name" : "morph",
+      "tag_set" : null,
+      "uiName" : "morph",
+      "type" : "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : null,
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    }, {
+      "name" : "pos",
+      "tag_set" : null,
+      "uiName" : "pos",
+      "type" : "de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS",
+      "enabled" : true,
+      "visible" : true,
+      "include_in_hover" : false,
+      "required" : false,
+      "remember" : false,
+      "hideUnconstraintFeature" : false,
+      "description" : null,
+      "project_name" : "Yiddish",
+      "multi_value_mode" : "NONE",
+      "link_mode" : "NONE",
+      "link_type_name" : null,
+      "link_type_role_feature_name" : null,
+      "link_type_target_feature_name" : null,
+      "traits" : null
+    } ],
+    "uiName" : "Token",
+    "type" : "span",
+    "description" : null,
+    "enabled" : true,
+    "built_in" : true,
+    "readonly" : false,
+    "attach_type" : null,
+    "attach_feature" : null,
+    "allow_stacking" : false,
+    "cross_sentence" : false,
+    "show_hover" : true,
+    "anchoring_mode" : "SINGLE_TOKEN",
+    "overlap_mode" : "NO_OVERLAP",
+    "validation_mode" : "NEVER",
+    "lock_to_token_offset" : true,
+    "multiple_tokens" : false,
+    "project_name" : "Yiddish",
+    "linked_list_behavior" : false,
+    "on_click_javascript_action" : null,
+    "traits" : null
+  } ],
+  "disableExport" : false,
+  "script_direction" : "RTL",
+  "created" : 1635586341000,
+  "updated" : 1637337543000,
+  "anonymous_curation" : false,
+  "knowledge_bases" : [ ],
+  "external_search" : [ ],
+  "recommenders" : [ {
+    "alwaysSelected" : false,
+    "enabled" : true,
+    "feature" : "value",
+    "layerName" : "de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity",
+    "maxRecommendations" : 3,
+    "name" : "[Named entity@value] String Matcher",
+    "skipEvaluation" : false,
+    "statesIgnoredForTraining" : [ ],
+    "threshold" : 0.0,
+    "tool" : "de.tudarmstadt.ukp.inception.recommendation.imls.stringmatch.StringMatchingRecommender",
+    "traits" : "{\"ignoreCase\":false}"
+  }, {
+    "alwaysSelected" : false,
+    "enabled" : true,
+    "feature" : "coarseValue",
+    "layerName" : "de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS",
+    "maxRecommendations" : 3,
+    "name" : "[Part of speech@UPOS] String Matcher",
+    "skipEvaluation" : false,
+    "statesIgnoredForTraining" : [ ],
+    "threshold" : 0.0,
+    "tool" : "de.tudarmstadt.ukp.inception.recommendation.imls.stringmatch.StringMatchingRecommender",
+    "traits" : "{\"ignoreCase\":false}"
+  } ],
+  "gazeteers" : [ {
+    "id" : 30,
+    "name" : "YiddishNamedEntities.txt",
+    "recommender" : "[Named entity@value] String Matcher"
+  } ]
+}
